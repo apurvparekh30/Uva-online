@@ -3,6 +3,7 @@
         "type_traits": "cpp",
         "iostream": "cpp",
         "bitset": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "valarray": "cpp"
     }
 }
