@@ -5,7 +5,7 @@ using namespace std;
 int n,t;
 int *trackLength;
 /*int solution(int i,int sum){
-    //printf("hello\n");
+    //printf("ghello\n");
     int c=0;
     if(i>=t) return sum;
     if(sum+trackLength[i] > n){
