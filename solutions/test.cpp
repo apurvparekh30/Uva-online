@@ -1,23 +1,31 @@
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-  std::set< std::vector<int> > conjunto;
-  std::vector<int> v0 = std::vector<int>(3);
-  v0[0]=0;
-  v0[1]=10;
-  v0[2]=20;
-  std::cout << v0[0] << endl;
-  conjunto.insert(v0);
-  v0[0]=1;
-  v0[1]=11;
-  v0[2]=22;
-  conjunto.insert(v0);
-  std::set< std::vector<int> >::iterator it;
-  std::cout << "size = " << conjunto.size() << endl;
-  for( it = conjunto.begin(); it != conjunto.end(); it++) {
-    const std::vector<int>& i = (*it); // HERE we get the vector
-    std::cout << i[0] << endl;  // NOW we output the first item.
+#include <cstdio>
+#include <cmath>
 
+using namespace std;
+
+int main(){
+    int T,p,q,r,s,t,u;
+    double lo,hi,mi,f;
+    
+    while(scanf("%d %d %d %d %d %d",&p,&q,&r,&s,&t,&u)==6){
+        if(p*exp(-1)+q*sin(1)+r*cos(1)+s*tan(1)+t+u>1e-9 || p+r+u<0){
+            printf("No solution\n");
+            continue;
+        }
+        
+        lo=0.0; hi=1.0;
+        
+        for(int i=0;i<30;i++){
+            mi=(lo+hi)/2;
+            
+            f=p*exp(-mi)+q*sin(mi)+r*cos(mi)+s*tan(mi)+t*mi*mi+u;
+            
+            if(f>0) lo=mi;
+            else hi=mi;
+        }
+        
+        printf("%.4f\n",lo);
+    }
+    
     return 0;
-  }
+}
