@@ -10,6 +10,7 @@
         "cstdlib": "cpp",
         "list": "cpp",
         "deque": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "limits": "cpp"
     }
 }
