@@ -1,42 +1,44 @@
-#include <cstdio>
-#include <cstring>
-#include <algorithm>
-#define MAX 10100
+#include <iostream>
+#include <stdio.h>
+#include <string.h>
 using namespace std;
-
-int store[MAX];
+int n, q, d, m;
+long long dp[201][12][200];
+long long a[201];
+long long mod(long long number, int mod) {
+	if (number >= 0)
+		return number % mod;
+	return (mod + (number % mod)) % mod;
+}
+long long solve(int indx, int num, int remd) {
+	if (num == 0 && remd == 0)
+		return 1;
+	if (indx == n || num == 0)
+		return 0;
+	if (dp[indx][num][remd] != -1) {
+		return dp[indx][num][remd];
+	}
+	return dp[indx][num][remd] = solve(indx + 1, num - 1,
+			mod(remd + a[indx], d)) + solve(indx + 1, num, remd);
+}
 
 int main() {
-	int n;
-	while ((scanf("%d",&n)==1) && (n>0)) {
-		memset(store,0,sizeof(store));
-		for(int i=0;i<n;i++){
-			scanf("%d",&store[i]);
+	int tc = 1;
+	//freopen("input.txt", "r", stdin);
+	while (true) {
+		cin >> n >> q;
+		if (n == 0 && q == 0) {
+			break;
 		}
-		sort(store,store+n);
-
-		// Find the maximum number of same sized bags
-		int maxLug = -1;
-		int curr = 1;
-		for(int i=0;i<n;i++){
-			if(store[i] == store[i+1]) {
-				curr++;
-				continue;
-			}
-			if (curr > maxLug) maxLug = curr;
-			curr = 1;
+		for (int i = 0; i < n; i++) {
+			cin >> a[i];
 		}
-
-		// Output with the max num of same sized bags interval
-		printf("%d\n",maxLug);
-		for (int i=0;i<maxLug;i++){
-			bool first = true;
-			for (int j=i;j<n;j+=maxLug) {
-				if (first) first = false;
-				else  printf(" ");
-				printf("%d",store[j]);
-			}
-			printf("\n");
+		cout << "SET " << tc << ":" << endl;
+		tc++;
+		for (int i = 1; i <= q; i++) {
+			cin >> d >> m;
+			memset(dp, -1, sizeof(dp));
+			printf("QUERY %d: %lld\n", i, solve(0, m, 0));
 		}
 	}
 	return 0;
