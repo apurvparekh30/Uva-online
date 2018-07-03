@@ -1,45 +1,30 @@
-#include <iostream>
+// UVa 11517 - Exact Change
+
 #include <stdio.h>
 #include <string.h>
-using namespace std;
-int n, q, d, m;
-long long dp[201][12][200];
-long long a[201];
-long long mod(long long number, int mod) {
-	if (number >= 0)
-		return number % mod;
-	return (mod + (number % mod)) % mod;
-}
-long long solve(int indx, int num, int remd) {
-	if (num == 0 && remd == 0)
-		return 1;
-	if (indx == n || num == 0)
-		return 0;
-	if (dp[indx][num][remd] != -1) {
-		return dp[indx][num][remd];
-	}
-	return dp[indx][num][remd] = solve(indx + 1, num - 1,
-			mod(remd + a[indx], d)) + solve(indx + 1, num, remd);
-}
 
 int main() {
-	int tc = 1;
-	//freopen("input.txt", "r", stdin);
-	while (true) {
-		cin >> n >> q;
-		if (n == 0 && q == 0) {
-			break;
-		}
+	int t;
+	for (scanf("%d", &t); t; t--) {
+		int to_pay;
+		scanf("%d", &to_pay);
+		int n;
+		scanf("%d", &n);
+		int T[10001];
+		memset(T, 127, sizeof(T));
+		int oo = T[0];
+		T[0] = 0;
 		for (int i = 0; i < n; i++) {
-			cin >> a[i];
+			int coin;
+			scanf("%d", &coin);
+			for (int j = 10000 - coin; j >= 0; j--)
+				if (T[j] != oo && T[j] + 1 < T[j + coin])
+					T[j + coin] = T[j] + 1;
 		}
-		cout << "SET " << tc << ":" << endl;
-		tc++;
-		for (int i = 1; i <= q; i++) {
-			cin >> d >> m;
-			memset(dp, -1, sizeof(dp));
-			printf("QUERY %d: %lld\n", i, solve(0, m, 0));
-		}
+		while (T[to_pay] == oo)
+			to_pay++;
+		printf("%d %d\n", to_pay, T[to_pay]);
 	}
+
 	return 0;
 }
