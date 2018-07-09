@@ -11,6 +11,7 @@
         "list": "cpp",
         "deque": "cpp",
         "vector": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "unordered_map": "cpp"
     }
 }
