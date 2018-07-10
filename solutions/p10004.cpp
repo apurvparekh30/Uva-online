@@ -28,6 +28,7 @@ int main(){
     while(scanf("%d",&n), n){
         memset(color,0,sizeof(color));
         for(int i=0;i<n;i++) g[i].clear();
+        //fill(g[0].begin(),g[n].begin(),0);
         scanf("%d",&l);
         while(l--){
             int u,v;
