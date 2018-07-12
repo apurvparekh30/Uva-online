@@ -1,6 +1,8 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+// Apurv Parekh
+// 12th July 2018
+
+#include <bits/stdc++.h>
+
 using namespace std;
 
 static const int UNVISITED = -1;
