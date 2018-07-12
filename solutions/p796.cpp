@@ -2,81 +2,67 @@
 // 12th July 2018
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
-static const int UNVISITED = -1;
+int const maxx = 100001;
 
-vector<vector<int> > network;
+int servers;
 
-vector<int> dfsParent;
-vector<int> dfsNum;
-vector<int> dfsLow;
-int dfsCounter = 1;
-// Articulation bridge
-vector<pair<int, int> > bridge;
+vector<vector<int>> g (maxx,vector<int>());
 
-void DFS(int u)
-{
-    dfsNum[u] = dfsLow[u] = dfsCounter++;
-    for (auto v: network[u])
-    {
-        if (dfsNum[v] == UNVISITED)
-        {
-            dfsParent[v] = u;
-            DFS(v);
-            if (dfsLow[v] > dfsNum[u])
-                bridge.push_back(make_pair(min(u, v), max(u, v)));
+int dfs_low[maxx];
+int dfs_num[maxx];
+int parent[maxx];
+int counter;
+vector<pair<int,int>> bridges;
 
-            dfsLow[u] = min(dfsLow[u], dfsLow[v]);
+void dfs(int u){
+    dfs_low[u] = dfs_num[u] = counter++;
+    for(auto v:g[u]){
+        if(dfs_num[v]== -1){
+            parent[v] = u;
+            dfs(v);
+            if(dfs_num[u] < dfs_low[v]){
+                bridges.push_back(make_pair(min(u,v),max(u,v)));
+            }
+            dfs_low[u] = min(dfs_low[u],dfs_low[v]);
         }
-        else if (v != dfsParent[u])
-            dfsLow[u] = min(dfsLow[u], dfsNum[v]);
+        else if(parent[u] != v){
+            dfs_low[u] = min(dfs_low[u],dfs_num[v]);
+        }
     }
 }
 
-int main()
-{  
-    int N;
-    while (cin >> N)
-    {
-        network.clear();
-        network.resize(N);
-        dfsParent.clear();
-        dfsParent.resize(N, UNVISITED);
-        dfsNum.clear();
-        dfsNum.resize(N, UNVISITED);
-        dfsLow.clear();
-        dfsLow.resize(N, UNVISITED);
-
-        bridge.clear();
-
-        for (int i = 0; i < N; ++i)
-        {
-            int u, n, v;
-            char c;
-            cin >> u;
-            cin >> c >> n >> c;
-            for (int j = 0; j < n; ++j)
-            {
-                cin >> v;
-                network[u].push_back(v);
-                network[v].push_back(u);
+int main(){
+    while(scanf("%d",&servers)==1){
+        memset(dfs_low,0,sizeof(dfs_low));
+        memset(dfs_num,-1,sizeof(dfs_num));
+        memset(parent,-1,sizeof(parent));
+        bridges.clear();
+        counter=0;
+        for(int i=0;i<servers;i++) g[i].clear();
+        for(int i=0;i<servers;i++){
+            int u,n,c,v;
+            scanf("%d",&u);
+            scanf("% ");
+            scanf("%c%c%c",&c,&n,&c);
+            for(int j=0;j<n-'0';j++){
+                scanf("%d",&v);
+                g[u].push_back(v);
+            }   
+        }
+        for(int i=0;i<servers;i++){
+            if(dfs_num[i] == -1){
+                dfs(i);
             }
         }
-        for (int u = 0; u < N; ++u)
-            if (dfsNum[u] == UNVISITED)
-                DFS(u);
+        sort(bridges.begin(),bridges.end());
 
-        sort(bridge.begin(), bridge.end());
-
-        cout << bridge.size() << " critical links" << endl;
-        for (int i = 0; i < bridge.size(); ++i)
-            cout << bridge[i].first 
-                 << " - "
-                 << bridge[i].second
-                 << endl;
-        cout << endl;
+        printf("%d critical links\n",bridges.size());
+        for(auto i: bridges){
+            printf("%d - %d\n",i.first,i.second);
+        }
+        printf("\n");
     }
     return 0;
 }
