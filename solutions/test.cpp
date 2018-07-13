@@ -1,80 +1,129 @@
+#include <cstdio>
+#include <cmath>
 #include <iostream>
+#include <string.h>		// For memset function
 #include <vector>
+#include <list>
+#include <stack>
+#include <queue>
+#include <string>
 #include <algorithm>
+#include <bitset>
+#include <sstream>
+#include <map>
+
 using namespace std;
 
-static const int UNVISITED = -1;
+#define FOR( i, L, U ) for(int i=(int)L ; i<=(int)U ; i++ )
+#define FORD( i, U, L ) for(int i=(int)U ; i>=(int)L ; i-- )
+#define SQR(x) ((x)*(x))
 
-vector<vector<int> > network;
+#define INF 99999999
+#define SZ size()
+#define PB push_back
+#define PF push_front
 
-vector<int> dfsParent;
-vector<int> dfsNum;
-vector<int> dfsLow;
-int dfsCounter = 1;
-// Articulation bridge
-vector<pair<int, int> > bridge;
+#define READ(filename)  freopen(filename, "r", stdin);
+#define WRITE(filename)  freopen(filename, "w", stdout);
 
-void DFS(int u)
+typedef long long LL;
+typedef vector<int> VI;
+typedef vector<vector<int> > VVI;
+typedef vector<double> VD;
+typedef vector<string> VS;
+typedef map<int, int> MII;
+typedef map<string, int> MSI;
+typedef map<int, string> MIS;
+typedef map<string, char> MSC;
+
+#define WHITE 0
+#define GRAY 1
+#define BLACK 2
+
+int NODE, EDGE;
+VVI G;
+VI color, dfsNum, dfsLow;
+int nodeNum;
+stack<int> S;
+VI inStack;
+MSI names;
+MIS rnames;
+void strongConnect(int u);
+void Tarjan()
 {
-    dfsNum[u] = dfsLow[u] = dfsCounter++;
-    for (auto v: network[u])
-    {
-        if (dfsNum[v] == UNVISITED)
-        {
-            dfsParent[v] = u;
-            DFS(v);
-            if (dfsLow[v] > dfsNum[u])
-                bridge.push_back(make_pair(min(u, v), max(u, v)));
+    nodeNum = 0;
+    FOR(u, 1, NODE) {
+        if(color[u] == WHITE)
+            strongConnect(u);
+    }
+}
 
+void strongConnect(int u)
+{
+    dfsNum[u] = dfsLow[u] = nodeNum++;
+    color[u] = GRAY;
+    S.push(u);  inStack[u] = true;
+
+    FOR(i, 0, G[u].SZ-1) {
+        int v = G[u][i];
+        if(color[v] == WHITE) {
+            strongConnect(v);
             dfsLow[u] = min(dfsLow[u], dfsLow[v]);
         }
-        else if (v != dfsParent[u])
+        else if(inStack[v] == true)
             dfsLow[u] = min(dfsLow[u], dfsNum[v]);
+    }
+
+    if(dfsNum[u] == dfsLow[u]) {
+        int comma = 0;
+        int w = -1;
+        while(w != u) {
+            w = S.top();    S.pop();    inStack[w] = false;
+            if(comma++>0)printf(", ");
+            cout << rnames[w];
+        }
+        cout << "\n";
     }
 }
 
 int main()
-{  
-    int N;
-    while (cin >> N)
-    {
-        network.clear();
-        network.resize(N);
-        dfsParent.clear();
-        dfsParent.resize(N, UNVISITED);
-        dfsNum.clear();
-        dfsNum.resize(N, UNVISITED);
-        dfsLow.clear();
-        dfsLow.resize(N, UNVISITED);
-
-        bridge.clear();
-
-        for (int i = 0; i < N; ++i)
-        {
-            int u, n, v;
-            char c;
-            cin >> u;
-            cin >> c >> n >> c;
-            for (int j = 0; j < n; ++j)
-            {
-                cin >> v;
-                network[u].push_back(v);
-                network[v].push_back(u);
-            }
+{
+    //READ("input.txt");
+   // WRITE("output.txt");
+    bool blank = false;
+    int i, j, k;
+    int cs=1;
+    int u, v;
+    string st,en;
+    while(cin >> NODE >> EDGE && NODE!=0 && EDGE!=0) {
+        if(blank)printf("\n");
+        blank = true;
+        names.clear();
+        rnames.clear();
+        G = VVI(NODE+1);
+        color = VI(NODE+1, WHITE);
+        dfsNum = VI(NODE+1);
+        dfsLow = VI(NODE+1);
+        inStack = VI(NODE+1,  false);
+        int in =1;
+        FOR(i, 1, EDGE) {
+            cin >> st >> en;
+            if(names[st]==0){
+                names[st] = in;
+                rnames[in] = st;
+                in++;
+                }
+            if(names[en]==0){
+                names[en]= in;
+                rnames[in] = en;
+                in++;
+                }
+            G[names[st]].PB(names[en]);
         }
-        for (int u = 0; u < N; ++u)
-            if (dfsNum[u] == UNVISITED)
-                DFS(u);
+        printf("Calling circles for data set %d:\n", cs++);
+        Tarjan();
 
-        sort(bridge.begin(), bridge.end());
-
-        cout << bridge.size() << " critical links" << endl;
-        for (int i = 0; i < bridge.size(); ++i)
-            cout << bridge[i].first 
-                 << " - "
-                 << bridge[i].second
-                 << endl;
-        cout << endl;
     }
-    return 0;
+
+	return 0;
 }
