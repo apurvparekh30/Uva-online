@@ -12,6 +12,8 @@
         "deque": "cpp",
         "vector": "cpp",
         "limits": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "array": "cpp",
+        "*.tcc": "cpp"
     }
 }
