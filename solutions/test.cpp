@@ -1,129 +1,96 @@
-#include <cstdio>
-#include <cmath>
-#include <iostream>
-#include <string.h>		// For memset function
-#include <vector>
-#include <list>
-#include <stack>
-#include <queue>
-#include <string>
-#include <algorithm>
-#include <bitset>
-#include <sstream>
-#include <map>
+#include<cstdio>
+#include<queue>
 
 using namespace std;
 
-#define FOR( i, L, U ) for(int i=(int)L ; i<=(int)U ; i++ )
-#define FORD( i, U, L ) for(int i=(int)U ; i>=(int)L ; i-- )
-#define SQR(x) ((x)*(x))
-
-#define INF 99999999
-#define SZ size()
-#define PB push_back
-#define PF push_front
-
-#define READ(filename)  freopen(filename, "r", stdin);
-#define WRITE(filename)  freopen(filename, "w", stdout);
-
-typedef long long LL;
-typedef vector<int> VI;
-typedef vector<vector<int> > VVI;
-typedef vector<double> VD;
-typedef vector<string> VS;
-typedef map<int, int> MII;
-typedef map<string, int> MSI;
-typedef map<int, string> MIS;
-typedef map<string, char> MSC;
-
-#define WHITE 0
-#define GRAY 1
-#define BLACK 2
-
-int NODE, EDGE;
-VVI G;
-VI color, dfsNum, dfsLow;
-int nodeNum;
-stack<int> S;
-VI inStack;
-MSI names;
-MIS rnames;
-void strongConnect(int u);
-void Tarjan()
-{
-    nodeNum = 0;
-    FOR(u, 1, NODE) {
-        if(color[u] == WHITE)
-            strongConnect(u);
+struct nodo{
+    int x,y,dir,time;
+    
+    nodo(int a, int b, int c, int d){
+        x=a;
+        y=b;
+        dir=c;
+        time=d;
     }
+};
+
+int M,N;
+int di[]={-1,0,1,0};
+int dj[]={0,1,0,-1};
+bool obstacle[50][50];
+bool visited[51][51][4];
+
+bool valido(int x, int y){
+    if(x<=0 || y<=0 || x>=M || y>=N) return false;
+    if(obstacle[x-1][y-1]) return false;
+    if(obstacle[x-1][y]) return false; 
+    if(obstacle[x][y-1]) return false;
+    if(obstacle[x][y]) return false;
+    
+    return true;
 }
 
-void strongConnect(int u)
-{
-    dfsNum[u] = dfsLow[u] = nodeNum++;
-    color[u] = GRAY;
-    S.push(u);  inStack[u] = true;
-
-    FOR(i, 0, G[u].SZ-1) {
-        int v = G[u][i];
-        if(color[v] == WHITE) {
-            strongConnect(v);
-            dfsLow[u] = min(dfsLow[u], dfsLow[v]);
-        }
-        else if(inStack[v] == true)
-            dfsLow[u] = min(dfsLow[u], dfsNum[v]);
+int shortest_time(int &startx, int &starty, int &dir, int &endx, int &endy){
+    queue<nodo> Q;
+    if(valido(startx,starty)){
+        Q.push(nodo(startx,starty,dir,0));
+        visited[startx][starty][dir]=true;
     }
-
-    if(dfsNum[u] == dfsLow[u]) {
-        int comma = 0;
-        int w = -1;
-        while(w != u) {
-            w = S.top();    S.pop();    inStack[w] = false;
-            if(comma++>0)printf(", ");
-            cout << rnames[w];
+    
+    while(!Q.empty()){
+        nodo aux=Q.front();
+        Q.pop();
+        
+        if(aux.x==endx && aux.y==endy) return aux.time;
+        
+        if(!visited[aux.x][aux.y][(aux.dir+1)%4]){
+            visited[aux.x][aux.y][(aux.dir+1)%4]=true;
+            Q.push(nodo(aux.x,aux.y,(aux.dir+1)%4,aux.time+1));
         }
-        cout << "\n";
+        
+        if(!visited[aux.x][aux.y][(aux.dir+3)%4]){
+            visited[aux.x][aux.y][(aux.dir+3)%4]=true;
+            Q.push(nodo(aux.x,aux.y,(aux.dir+3)%4,aux.time+1));
+        }
+        
+        for(int i=1;i<=3;i++){
+            if(valido(aux.x+di[aux.dir]*i,aux.y+dj[aux.dir]*i)){
+                if(visited[aux.x+di[aux.dir]*i][aux.y+dj[aux.dir]*i][aux.dir]) continue;
+                visited[aux.x+di[aux.dir]*i][aux.y+dj[aux.dir]*i][aux.dir]=true;
+                Q.push(nodo(aux.x+di[aux.dir]*i,aux.y+dj[aux.dir]*i,aux.dir,aux.time+1));
+            }else break;
+        }
     }
+    
+    return -1;
 }
 
-int main()
-{
-    //READ("input.txt");
-   // WRITE("output.txt");
-    bool blank = false;
-    int i, j, k;
-    int cs=1;
-    int u, v;
-    string st,en;
-    while(cin >> NODE >> EDGE && NODE!=0 && EDGE!=0) {
-        if(blank)printf("\n");
-        blank = true;
-        names.clear();
-        rnames.clear();
-        G = VVI(NODE+1);
-        color = VI(NODE+1, WHITE);
-        dfsNum = VI(NODE+1);
-        dfsLow = VI(NODE+1);
-        inStack = VI(NODE+1,  false);
-        int in =1;
-        FOR(i, 1, EDGE) {
-            cin >> st >> en;
-            if(names[st]==0){
-                names[st] = in;
-                rnames[in] = st;
-                in++;
-                }
-            if(names[en]==0){
-                names[en]= in;
-                rnames[in] = en;
-                in++;
-                }
-            G[names[st]].PB(names[en]);
-        }
-        printf("Calling circles for data set %d:\n", cs++);
-        Tarjan();
-
+int main(){    
+    int startx,starty,endx,endy,dir,ax;
+    char s[6];    
+    
+    while(1){
+        scanf("%d %d",&M,&N);
+        if(M==0 || N==0) break;
+        
+        for(int i=0;i<M;i++)
+            for(int j=0;j<N;j++){
+                scanf("%d",&ax);
+                obstacle[i][j]=ax;
+            }
+        
+        for(int i=0;i<M;i++)
+            for(int j=0;j<N;j++) fill(visited[i][j],visited[i][j]+4,false);
+        
+        scanf("%d %d %d %d %s",&startx,&starty,&endx,&endy,s);
+        
+        if(s[0]=='n') dir=0;
+        else if(s[0]=='e') dir=1;
+        else if(s[0]=='s') dir=2;
+        else dir=3;
+        
+        printf("%d\n",shortest_time(startx,starty,dir,endx,endy));
     }
-
-	return 0;
+    
+    return 0;
 }
