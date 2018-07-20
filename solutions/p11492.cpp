@@ -1,3 +1,5 @@
+// Apurv Parekh
+
 #include <algorithm>
 #include <unordered_map>
 #include <queue>
@@ -8,78 +10,79 @@
 using namespace std;
 
 int n;
-unordered_map<string,int> wordIndex,langIndex;
+string o,d;
 
-struct vertex {
-    string word,lang1,lang2;
-    vertex(){
-
-    }
-    vertex(string a,string b,string c){
-        word=a; lang1=b; lang2=c;
-    }
-};
-vector<vertex> words(2001);
 struct edge{
-    int v,w;
-    edge(int a,int b){
-        v=a; w=b;
+    string v;
+    int w;
+    int i;
+    edge(){}
+    edge(string b,int c,int d){
+        v=b; w=c; i=d;
     }
-    bool operator <(const edge& b) const{
+    bool operator< ( const edge &b) const{
         return this->w>b.w;
     }
 };
-vector<vector<edge>> g(2002,vector<edge>());
-string o,d;
-int dist[2002];
+
+unordered_map<string,int> toIndex;
+vector<vector<edge>> g(5001,vector<edge>());
+
+int dist[5001][27];
+
+int index;
+
 void init(){
-    wordIndex.clear();
-    langIndex.clear();
-    words.clear();
-    fill(dist,dist+n+2,1e9);
-    for(int i=0;i<=n+1;i++) g[i].clear();
+    index=1;
+    toIndex.clear();
+    for(int i=0;i<5001;i++) g[i].clear();
+    fill(&dist[0][0],&dist[5001][0],1e9);
 }
+
 int main(){
-    while(scanf("%d",&n),n){
-        init();
+    while(scanf("%d",&n), n){
         cin>>o>>d;
-        for(int i=1;i<=n;i++){
-            string l1,l2,w;
-            cin>>l1>>l2>>w;
-            wordIndex[w]=i;
-            for(vertex wrd:words){
-                if(w[0]!=wrd.word[0]){
-                    if(l1==wrd.lang1||l1==wrd.lang2||l2==wrd.lang1||l2==wrd.lang2){
-                        int wIndex = wordIndex[wrd.word];
-                        g[i].push_back(edge(wIndex,w.length()));
-                        g[wIndex].push_back(edge(i,wrd.word.length()));
-                    }
-                }
-            }
-            if(l1==o||l2==o) g[0].push_back(edge(i,0));
-            if(l1==d||l2==d) g[i].push_back(edge(n+1,w.length()));
-            words.push_back(vertex(w,l1,l2));
+        
+        init();
+        if(toIndex[o]==0) toIndex[o]=index++;
+        if(toIndex[d]==0) toIndex[d]=index++;
+        for(int i=0;i<n;i++){
+            string u,v,w;
+            cin>>u>>v>>w;
+            if(toIndex[u]==0) toIndex[u]=index++;
+            if(toIndex[v]==0) toIndex[v]=index++;
+            g[toIndex[u]].push_back(edge(v,w.length(),w[0]-'a'));
+            g[toIndex[v]].push_back(edge(u,w.length(),w[0]-'a'));
         }
-        priority_queue <edge> pq;
-        pq.push(edge(0,0));
-        dist[0]=0;
+        
+        priority_queue<edge> pq;
+        pq.push(edge(o,0,26));
+        dist[toIndex[o]][26]=0;
         while(!pq.empty()){
-            edge curr=pq.top();pq.pop();
-            int u=curr.v; int w=curr.w;
-            if(dist[u] < w) continue;
-            for(edge e:g[u]){
-                if(dist[e.v] > dist[u]+e.w){
-                    dist[e.v]=dist[u]+e.w;
-                    pq.push(edge(e.v,dist[e.v]));
+            edge curr=pq.top(); pq.pop();
+            string u=curr.v; int uw=curr.w; int ui=curr.i;
+            if(dist[toIndex[u]][ui] < uw) continue;
+            for(edge e:g[toIndex[u]]){
+                string v=e.v;
+                int vw=e.w;
+                int vi=e.i;
+                if(vi == ui) continue;
+                if(dist[toIndex[v]][vi] > dist[toIndex[u]][ui]+vw){
+                    dist[toIndex[v]][vi]=dist[toIndex[u]][ui]+vw;
+                    pq.push(edge(v,dist[toIndex[v]][vi],vi));
                 }
             }
         }
-        if(dist[n+1]==1e9){
+        int best=1e9;
+        for(int i=0;i<27;i++){
+            best=min(best,dist[toIndex[d]][i]);
+        }
+        if(best==1e9){
             printf("impossivel\n");
         }
         else{
-            printf("%d\n",dist[n+1]);
+            printf("%d\n",best);
         }
     }
-    return EXIT_SUCCESS;
+    return 0;
 }
