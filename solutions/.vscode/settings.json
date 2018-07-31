@@ -18,6 +18,7 @@
         "iosfwd": "cpp",
         "forward_list": "cpp",
         "unordered_set": "cpp",
-        "system_error": "cpp"
+        "system_error": "cpp",
+        "functional": "cpp"
     }
 }
