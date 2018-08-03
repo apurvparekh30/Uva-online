@@ -14,9 +14,12 @@ int cost[610];
 int n,k;
 
 int dp(int i,int k,int ct){
-	if(i==n) return 0;
 	if(k<0) return INF;
-	int &r=memo[i][k];
+	if(i==n) return ct;
+	int ans=ct;
+	ans=max(ans,dp(i+1,k-1,cost[i]));
+	ans=min(ans,dp(i+1,k,ct+cost[i]));
+	return ans;
 } 
 
 int main(){

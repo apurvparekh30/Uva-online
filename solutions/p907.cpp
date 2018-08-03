@@ -7,7 +7,7 @@
 
 using namespace std;
 
-const int INF = 1e9;
+const int INF =  1e9;
 
 int memo[610][301];
 int cost[610];
