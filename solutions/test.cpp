@@ -1,86 +1,93 @@
-// Apurv Parekh
-// 4th Aug 2018
 
-#include <algorithm>
-#include <cstdio>
+#include <vector>
 #include <queue>
 
-using namespace std;
+#include <cstdio>
+#include <cstring>
 
-const int MAX = 10;
-const int mod = 20437;
+typedef std::vector<int> vi;
+typedef std::queue<int> qi;
 
-struct cell{
-    int x,y,w;
-    char to;
-    cell(){}
-    cell(int x,int y,int w,char to):x(x),y(y),w(w),to(to){}
-};
-int n;
-char grid[MAX][MAX];
-bool visited[11][11][100];
-cell s;
+int bfs_tree_diameter(vi (&adj)[25], int u) {
+  bool visited[25];
+  vi badj[25];
+  int leaf;
+  qi q;
 
-char last;
+  // Create bfs tree
+  memset(visited, false, 25*sizeof(bool));
+  q.push(u);
+  visited[u] = true;
+  while (!q.empty()) {
+    int v = q.front(); q.pop();
 
-int dp[11][11][100][130];
-int dr[]={1,0,-1,0};
-int dc[]={0,-1,0,1};
-int tc=0;
+    for (vi::iterator i = adj[v].begin(); i != adj[v].end(); ++i) {
+      int w = *i;
+      if (visited[w])
+        continue;
 
-void bfs(){
-    queue<cell> q;
-    q.push(s);
-    while(!q.empty()){
-        cell u=q.front(); q.pop();
-        int x=u.x; int y=u.y; int w=u.w; char to=u.to;
-        if(visited[x][y][to]) continue;
-        visited[x][y][to]=true;
-        if(grid[x][y] == last){
-            printf("%d %d\n",w,dp[x][y][to][w]%mod);
-            return;
-        }
-        int paths=dp[x][y][to][w];
-        if(grid[x][y]==to){
-            grid[x][y]='.';
-            to++;
-        }
-        for(int i=0;i<4;i++){
-            int nx=x+dr[i]; int ny=y+dc[i];
-            if(nx<0||nx>=n||ny<0||ny>=n) continue;
-            if(visited[nx][ny][to]) continue;
-            char next = grid[nx][ny];
-            if(next!='.' && next!=to) continue;
-            int &ref=dp[nx][ny][to][w+1];
-            ref=(ref+(paths%mod))%mod;
-            q.push(cell(nx,ny,w+1,to));
-        }
+      // Add edge v <-> w
+      badj[v].push_back(w);
+      badj[w].push_back(v);
+
+      q.push(w);
+      visited[w] = true;
     }
-    printf("Impossible\n");
+
+    leaf = v;
+  }
+
+  // Do another bfs from leaf in the bfs tree to find diameter
+  int diameter = -1;
+  memset(visited, false, 25*sizeof(bool));
+  q.push(leaf);
+  visited[leaf] = true;
+  q.push(-1);
+  while (!q.empty()) {
+    int v = q.front(); q.pop();
+    if (v == -1) {
+      diameter++;
+      if (!q.empty())
+        q.push(-1);
+      continue;
+    }
+
+    for (vi::iterator i = badj[v].begin(); i != badj[v].end(); ++i) {
+      int w = *i;
+      if (visited[w])
+        continue;
+
+      q.push(w);
+      visited[w] = true;
+    }
+  }
+
+  return diameter;
 }
 
-int main(){
-   
-    while(scanf("%d",&n),n){
-        tc++;
-        last='A';
-        fill(&dp[0][0][0][0],&dp[11][0][0][0],0);
-        fill(&visited[0][0][0],&visited[11][0][0],false);
-        for(int i=0;i<n;i++){
-            scanf("% ");
-            for(int j=0;j<n;j++){
-                scanf("%c",&grid[i][j]);
-                if(grid[i][j]=='A'){
-                    dp[i][j]['A'][0]=1;
-                    s=cell(i,j,0,'A');
-                }
-                if(grid[i][j]>last){
-                    last=grid[i][j];
-                }
-            }
-        }
-        printf("Case %d: ",tc);
-        bfs();
+int main() {
+  int testCases;
+
+  scanf("%d", &testCases);
+  for (int caseN = 1; caseN <= testCases; caseN++) {
+    vi adj[25];
+    int n, m;
+    scanf("%d %d", &n, &m);
+
+    for (int i = 0; i < m; i++) {
+      int u, v;
+
+      scanf("%d %d", &u, &v);
+      adj[u].push_back(v);
+      adj[v].push_back(u);
     }
-    return 0;
+
+    int minDiameter = 1e9;
+    for (int u = 0; u < n; u++) {
+      minDiameter = std::min(minDiameter, bfs_tree_diameter(adj, u));
+    }
+
+    printf("Case #%d:\n%d\n\n", caseN, minDiameter);
+  }
+  return 0;
 }
