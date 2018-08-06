@@ -1,6 +1,12 @@
 // Apurv Parekh
 // 6th Aug 2018
 
+/*
+    find starting and ending nodes of diameter of tree,
+    then answer for each node will be maximum of distance from
+    these endpoints.
+ */
+
 #include <algorithm>
 #include <cstdio>
 #include <vector>
