@@ -12,9 +12,9 @@ const int mod = 20437;
 
 struct cell{
     int x,y,w;
-    char to;
+    char fm;
     cell(){}
-    cell(int x,int y,int w,char to):x(x),y(y),w(w),to(to){}
+    cell(int x,int y,int w,char fm):x(x),y(y),w(w),fm(fm){}
 };
 int n;
 char grid[MAX][MAX];
@@ -33,27 +33,31 @@ void bfs(){
     q.push(s);
     while(!q.empty()){
         cell u=q.front(); q.pop();
-        int x=u.x; int y=u.y; int w=u.w; char to=u.to;
-        if(visited[x][y][to]) continue;
-        visited[x][y][to]=true;
-        if(grid[x][y] == last){
-            printf("%d %d\n",w,dp[x][y][to][w]%mod);
+        int x=u.x; int y=u.y; int w=u.w; char fm=u.fm;
+        if(visited[x][y][fm]) continue;
+        if(fm == last){
+            printf("%d %d\n",w,dp[x][y][fm][w]);
             return;
         }
-        int paths=dp[x][y][to][w];
-        if(grid[x][y]==to){
+        visited[x][y][fm]=true;
+        if(grid[x][y]==fm){
             grid[x][y]='.';
-            to++;
         }
+        int paths=dp[x][y][fm][w];
         for(int i=0;i<4;i++){
             int nx=x+dr[i]; int ny=y+dc[i];
             if(nx<0||nx>=n||ny<0||ny>=n) continue;
-            if(visited[nx][ny][to]) continue;
+            if(visited[nx][ny][fm]) continue;
             char next = grid[nx][ny];
-            if(next!='.' && next!=to) continue;
-            int &ref=dp[nx][ny][to][w+1];
-            ref=(ref+(paths%mod))%mod;
-            q.push(cell(nx,ny,w+1,to));
+            if(next=='.'){
+                q.push(cell(nx,ny,w+1,fm));
+            }
+            else if(next==fm+1){
+                fm++;
+                int &ref=dp[nx][ny][fm][w+1];
+                ref=((ref%mod)+(paths%mod))%mod;
+                q.push(cell(nx,ny,w+1,fm));
+            } 
         }
     }
     printf("Impossible\n");
@@ -72,7 +76,7 @@ int main(){
                 scanf("%c",&grid[i][j]);
                 if(grid[i][j]=='A'){
                     dp[i][j]['A'][0]=1;
-                    s=cell(i,j,0,'A');
+                    s=cell(i,j,0,'B');
                 }
                 if(grid[i][j]>last){
                     last=grid[i][j];
