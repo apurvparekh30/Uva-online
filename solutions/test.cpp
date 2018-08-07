@@ -1,93 +1,128 @@
+#include <bits/stdc++.h>
 
-#include <vector>
-#include <queue>
+using namespace std;
 
-#include <cstdio>
-#include <cstring>
+typedef pair<int, bool> ib;
 
-typedef std::vector<int> vi;
-typedef std::queue<int> qi;
+vector<int> get_diameter(const vector<vector<ib>> &adj_list, int start_node) {
+    queue<int> q;
+    vector<bool> visited(adj_list.size());
+    q.push(start_node);
+    visited[start_node] = true;
 
-int bfs_tree_diameter(vi (&adj)[25], int u) {
-  bool visited[25];
-  vi badj[25];
-  int leaf;
-  qi q;
+    int far = start_node;
 
-  // Create bfs tree
-  memset(visited, false, 25*sizeof(bool));
-  q.push(u);
-  visited[u] = true;
-  while (!q.empty()) {
-    int v = q.front(); q.pop();
+    while (!q.empty()) {
+        int u = q.front();
+        q.pop();
+        far = u;
 
-    for (vi::iterator i = adj[v].begin(); i != adj[v].end(); ++i) {
-      int w = *i;
-      if (visited[w])
-        continue;
+        for (const auto &item : adj_list[u]) {
+            if (!item.second)
+                continue;
 
-      // Add edge v <-> w
-      badj[v].push_back(w);
-      badj[w].push_back(v);
-
-      q.push(w);
-      visited[w] = true;
+            int v = item.first;
+            if (!visited[v]) {
+                visited[v] = true;
+                q.push(v);
+            }
+        }
     }
 
-    leaf = v;
-  }
+    vector<int> parent(adj_list.size());
+    
+    q.push(far);
+    visited.assign(adj_list.size(), false);
+    visited[far] = true;
+    parent[far] = -1;
 
-  // Do another bfs from leaf in the bfs tree to find diameter
-  int diameter = -1;
-  memset(visited, false, 25*sizeof(bool));
-  q.push(leaf);
-  visited[leaf] = true;
-  q.push(-1);
-  while (!q.empty()) {
-    int v = q.front(); q.pop();
-    if (v == -1) {
-      diameter++;
-      if (!q.empty())
-        q.push(-1);
-      continue;
+    while (!q.empty()) {
+        int u = q.front();
+        q.pop();
+        far = u;
+
+        for (const auto &item : adj_list[u]) {
+            if (!item.second)
+                continue;
+
+            int v = item.first;
+            if (!visited[v]) {
+                visited[v] = true;
+                parent[v] = u;
+                q.push(v);
+            }
+        }
     }
 
-    for (vi::iterator i = badj[v].begin(); i != badj[v].end(); ++i) {
-      int w = *i;
-      if (visited[w])
-        continue;
-
-      q.push(w);
-      visited[w] = true;
+    vector<int> path;
+    while (far != -1) {
+        path.push_back(far);
+        far = parent[far];
     }
-  }
-
-  return diameter;
+    return path;
 }
 
 int main() {
-  int testCases;
+    int N;
+    scanf("%d", &N);
+    while (N--) {
+        int n;
+        scanf("%d", &n);
+        vector<vector<ib>> adj_list(n);
 
-  scanf("%d", &testCases);
-  for (int caseN = 1; caseN <= testCases; caseN++) {
-    vi adj[25];
-    int n, m;
-    scanf("%d %d", &n, &m);
+        for (int i = 0; i < n - 1; i++) {
+            int a, b;
+            scanf("%d %d", &a, &b);
+            adj_list[a - 1].push_back({b - 1, true});
+            adj_list[b - 1].push_back({a - 1, true});
+        }
+        
+        vector<int> diameter = get_diameter(adj_list, 0);
 
-    for (int i = 0; i < m; i++) {
-      int u, v;
+        int solution = n;
+        pair<int, int> cancel, add;
 
-      scanf("%d %d", &u, &v);
-      adj[u].push_back(v);
-      adj[v].push_back(u);
+        for (int i = 1; i < diameter.size(); i++) {
+            int u = diameter[i - 1], v = diameter[i];
+
+            ib *edge1, *edge2;
+
+            for (auto &item : adj_list[u])
+                if (item.first == v) {
+                    edge1 = &item;
+                    break;
+                }
+            for (auto &item : adj_list[v])
+                if (item.first == u) {
+                    edge2 = &item;
+                    break;
+                }
+
+            edge1->second = false;
+            edge2->second = false;
+
+            vector<int> left_diameter = get_diameter(adj_list, u),
+                        right_diameter = get_diameter(adj_list, v);
+
+            int new_diameter = max(ceil((left_diameter.size() - 1) / 2.0) +
+                                   ceil((right_diameter.size() - 1) / 2.0) + 1,
+                                   max(left_diameter.size() - 1.0, 
+                                       right_diameter.size() - 1.0));
+
+            if (new_diameter < solution) {
+                solution = new_diameter;
+                cancel.first = u + 1;
+                cancel.second = v + 1;
+                add.first = left_diameter[left_diameter.size() / 2] + 1;
+                add.second = right_diameter[right_diameter.size() / 2] + 1;
+            }
+            
+            edge1->second = true;
+            edge2->second = true;
+        }
+        printf("%d\n%d %d\n%d %d\n", solution, cancel.first, cancel.second,
+                                     add.first, add.second);
     }
 
-    int minDiameter = 1e9;
-    for (int u = 0; u < n; u++) {
-      minDiameter = std::min(minDiameter, bfs_tree_diameter(adj, u));
-    }
-
-    printf("Case #%d:\n%d\n\n", caseN, minDiameter);
-  }
-  return 0;
+    return 0;
 }
