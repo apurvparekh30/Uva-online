@@ -1,56 +1,52 @@
-#include <iostream>
-#include <string.h>
 
-#define maxcolors 50
+
+#include <vector>
+#include <list>
+#include <map>
+#include <set>
+#include <deque>
+#include <stack>
+#include <bitset>
+#include <algorithm>
+#include <functional>
+#include <numeric>
+#include <queue>
+#include <utility>
+#include <sstream>
+#include <iostream>
+#include <iomanip>
+#include <cstdio>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
+#include <memory>
 
 using namespace std;
 
-int graph[maxcolors+1][maxcolors+1];
-int degree[maxcolors+1];
+using vi = vector<int>;
+using ii = pair<int,int>;
+using ll = long long;
+using llu = unsigned long long;
+const int INF = numeric_limits<int>::max();
 
-void dfs(int start)
-{
-    for(int i=1;i<=maxcolors;i++)
-    {
-        if (graph[start][i]>0)
-        {
-            graph[start][i]--;
-            graph[i][start]--;
-            dfs(i);
-            cout << i << " " << start << endl;
-        }
+int main() {
+  int tcc;
+  cin >> tcc;
+  string s;
+  getline(cin, s); //getline(cin, s);
+  while (tcc--) {
+    double d = 0;
+    getline(cin, s); // skip hangar coords
+    while (true) {
+      getline(cin, s);
+      if (s == "") break;
+      stringstream ss(s);
+      double x1, x2, y1, y2;
+      ss >> x1 >> y1 >> x2 >> y2;
+      d += pow(pow(x1 - x2, 2) + pow(y1 - y2, 2), 0.5);
     }
-}
-
-bool checkdegree()
-{
-    for(int i=0;i<=maxcolors;i++) if (degree[i]%2==1) return false;
-    return true;
-}
-
-int main()
-{
-    int cases, n, color1, color2, temp;
-    cin >> cases;
-    for(int z=1;z<=cases;z++)
-    {
-        cin >> n;
-        memset(degree,0,sizeof(degree));
-        memset(graph,0,sizeof(graph));
-        temp=-1;
-        for(int i=0;i<n;i++)
-        {
-            cin >> color1 >> color2;
-            graph[color1][color2]++;
-            graph[color2][color1]++;
-            degree[color1]++;
-            degree[color2]++;
-            if (temp==-1) temp = color1;
-        }
-        cout << "Case #" << z << endl;
-        if (!checkdegree()) cout << "some beads may be lost" << endl;
-        else dfs(temp);
-        if (z!=cases) cout << endl;
-    }
-    return 0;
+    int mins = round(d * 2 * 60 / 20000);
+    printf("%d:%02d\n", mins / 60, mins % 60);
+    if (tcc) printf("\n");
+  }
 }
