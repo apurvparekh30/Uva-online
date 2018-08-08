@@ -20,6 +20,7 @@
         "unordered_set": "cpp",
         "system_error": "cpp",
         "functional": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "istream": "cpp"
     }
 }
