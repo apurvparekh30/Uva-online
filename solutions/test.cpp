@@ -1,52 +1,48 @@
+// Apurv Parekh
+// 8th Aug 2018
 
 
-#include <vector>
-#include <list>
-#include <map>
-#include <set>
-#include <deque>
-#include <stack>
-#include <bitset>
 #include <algorithm>
-#include <functional>
-#include <numeric>
-#include <queue>
-#include <utility>
-#include <sstream>
-#include <iostream>
-#include <iomanip>
 #include <cstdio>
-#include <cmath>
-#include <cstdlib>
-#include <ctime>
-#include <memory>
 
 using namespace std;
 
-using vi = vector<int>;
-using ii = pair<int,int>;
-using ll = long long;
-using llu = unsigned long long;
-const int INF = numeric_limits<int>::max();
+const int maxx = 200;
 
-int main() {
-  int tcc;
-  cin >> tcc;
-  string s;
-  getline(cin, s); //getline(cin, s);
-  while (tcc--) {
-    double d = 0;
-    getline(cin, s); // skip hangar coords
-    while (true) {
-      getline(cin, s);
-      if (s == "") break;
-      stringstream ss(s);
-      double x1, x2, y1, y2;
-      ss >> x1 >> y1 >> x2 >> y2;
-      d += pow(pow(x1 - x2, 2) + pow(y1 - y2, 2), 0.5);
+int inDec[maxx];
+int outDec[maxx];
+
+int n,r;
+
+int main(){
+    while(scanf("%d%d",&n,&r)==2){
+        fill(inDec,inDec+maxx,0);
+        fill(outDec,outDec+maxx,0);
+        while(r--){
+            int u,v;
+            scanf("%d%d",&u,&v);
+            outDec[u]++;
+            inDec[v]++;
+        }
+        int bad=false;
+        int inDiff=0;
+        int outDiff=0;
+        for(int i=0;i<n;i++){
+            int res = inDec[i]-outDec[i];
+            if(res==0) continue;
+            else if(res>1 || res<-1){
+                bad=true;
+                break;
+            }
+            else if(res==1) inDiff++;
+            else if(res==-1) outDiff++;
+        }
+        if(bad || inDiff>1 || outDiff>0){
+            printf("Not Possible\n");
+        }
+        else{
+             printf("Possible\n");
+        }
     }
-    int mins = round(d * 2 * 60 / 20000);
-    printf("%d:%02d\n", mins / 60, mins % 60);
-    if (tcc) printf("\n");
-  }
+    return 0;
 }
