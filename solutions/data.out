@@ -1,82 +1,33 @@
-12
--1
--1
--1
--1
-28
-2
-1
--1
--1
--1
--1
-2
--1
-39
-9
--1
--1
-34
--1
--1
-6
-1
-7
--1
--1
--1
--1
-21
--1
-1
--1
-9
-34
--1
-1
--1
-14
-45
-8
-22
--1
-43
--1
--1
--1
--1
-20
-34
--1
--1
-43
-1
-17
--1
-39
--1
--1
--1
-10
-1
--1
-37
-1
--1
--1
-40
--1
-6
--1
--1
--1
-14
--1
--1
-2
-36
--1
-24
-1
-23
-33
+1 knights may be placed on a 1 row 1 column board.
+0 knights may be placed on a 1 row 0 column board.
+0 knights may be placed on a 0 row 1 column board.
+2 knights may be placed on a 2 row 1 column board.
+2 knights may be placed on a 1 row 2 column board.
+4 knights may be placed on a 2 row 2 column board.
+4 knights may be placed on a 2 row 3 column board.
+4 knights may be placed on a 3 row 2 column board.
+125000 knights may be placed on a 500 row 500 column board.
+135 knights may be placed on a 45 row 6 column board.
+32 knights may be placed on a 7 row 9 column board.
+20 knights may be placed on a 4 row 10 column board.
+55 knights may be placed on a 10 row 11 column board.
+6 knights may be placed on a 2 row 5 column board.
+284 knights may be placed on a 2 row 283 column board.
+484 knights may be placed on a 484 row 2 column board.
+124 knights may be placed on a 123 row 2 column board.
+500 knights may be placed on a 2 row 500 column board.
+156 knights may be placed on a 13 row 24 column board.
+100 knights may be placed on a 2 row 100 column board.
+100 knights may be placed on a 100 row 2 column board.
+0 knights may be placed on a 2 row 0 column board.
+0 knights may be placed on a 0 row 2 column board.
+6 knights may be placed on a 1 row 6 column board.
+10 knights may be placed on a 1 row 10 column board.
+10 knights may be placed on a 10 row 1 column board.
+8 knights may be placed on a 2 row 6 column board.
+8 knights may be placed on a 6 row 2 column board.
+12 knights may be placed on a 10 row 2 column board.
+12 knights may be placed on a 2 row 10 column board.
+16 knights may be placed on a 14 row 2 column board.
+16 knights may be placed on a 2 row 14 column board.
+
