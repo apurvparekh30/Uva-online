@@ -1,26 +1,57 @@
-#include <bits/stdc++.h>
+// Apurv Parekh
+
+#include <algorithm>
+#include <cstdio>
+#include <unordered_map>
+
 using namespace std;
 
+const int maxx = 1e6+1;
+
+int a,b,c;
+unordered_map <int,int> mp;
+
+int score[maxx];
+
 int main(){
-	int n;
-	while (cin >> n && n){
-		string s;
-		int x=1,y=0,z=0;
-		for (int i=0;i<n-1;i++){
-			cin >> s;
-			if (s[0]=='N') continue;
-			else if (s=="+y") swap(x,y), x=-x; // x=-y, y=x;
-			else if (s=="-y") swap(x,y), y=-y; // x=y, y=-x;
-			else if (s=="+z") swap(x,z), x=-x; // x=-z, z=x;
-			else swap(x,z), z=-z; // x=z, z=-x; 
-		}
-		// cout << x << " " << y << " " << z << endl;
-		if (x+y+z<0) cout << "-";
-		else cout << "+";
-		if (x) cout << "x";
-		else if (y) cout << "y";
-		else cout << "z";
-		cout << endl;
-	}
+    int tc; scanf("%d",&tc);
+    while(tc--){
+        fill(score,score+maxx,1);
+        mp.clear();
+        scanf("%d%d%d",&a,&b,&c);
+        for(int i=1;i<=106;i++) mp[i]=i;
+        while(b--){
+            int x,y;
+            scanf("%d%d",&x,&y);
+            mp[x]=y;
+        }
+        if(c!=0){
+            bool flag=false;
+            for(int i=1;i<=a;i++){
+                score[i]=mp[score[i]];
+                if(score[i]>=100){
+                    flag=true;
+                    break;
+                }
+            }
+            int i=1;
+            while(c--){
+                int roll; scanf("%d",&roll);
+                if(flag) continue;
+                score[i]+=roll;
+                score[i]=mp[score[i]];
+                if(score[i]>=100){
+                    flag=true;
+                    continue;
+                }
+                i=i+1;
+				i=(i%(a+1))+1;
+            }
+        }
+        
+        for(int i=1;i<=a;i++){
+            printf("Position of player %d is %d.\n",i,min(score[i],100));
+        }
+    }
     return 0;
 }
