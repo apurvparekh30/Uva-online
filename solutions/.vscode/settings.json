@@ -21,6 +21,7 @@
         "system_error": "cpp",
         "functional": "cpp",
         "string_view": "cpp",
-        "istream": "cpp"
+        "istream": "cpp",
+        "initializer_list": "cpp"
     }
 }
