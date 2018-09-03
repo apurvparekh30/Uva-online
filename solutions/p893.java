@@ -56,7 +56,7 @@ class Main {
             month--;
             year--;
             day += monthToDays(month, year);
-            day += yearToDays(year);
+            day += yearToDays(year); // or may be year+1
             day += daysAhead;
 
             year = getYearFromDays(day);
