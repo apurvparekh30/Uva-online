@@ -18,6 +18,13 @@ class Main {
     }
 
     static int f(int idx){
+        /* for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++)
+                System.out.print(grid[idx][i][j]+" ");
+            System.out.println();
+        }
+        System.out.println(); */
+            
         if(done(idx)) return -1;
         for(int i=0;i<3;i++)
             for(int j=0;j<3;j++){
