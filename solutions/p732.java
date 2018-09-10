@@ -54,7 +54,6 @@ class Main {
                 if(possible(in,out))
                     dfs(new ArrayDeque<Character>(), "", "");
                 System.out.println("]");
-            
         }
     }
 
