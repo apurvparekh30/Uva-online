@@ -3,8 +3,6 @@ import java.io.*;
 
 class Main {
 
-    
-
     static FastReader fs = new FastReader();
     static Deque<Car> qe[];
     static final int LEFT = 0;
