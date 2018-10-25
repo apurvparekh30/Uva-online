@@ -1,93 +1,128 @@
-[0, 4, 7, 5, 2, 6, 1, 3] 451
-[0, 5, 7, 2, 6, 3, 1, 4] 405
-[0, 6, 3, 5, 7, 1, 4, 2] 383
-[0, 6, 4, 7, 1, 3, 5, 2] 385
-[1, 3, 5, 7, 2, 0, 6, 4] 385
-[1, 4, 6, 0, 2, 7, 5, 3] 477
-[1, 4, 6, 3, 0, 7, 5, 2] 466
-[1, 5, 0, 6, 3, 7, 2, 4] 438
-[1, 5, 7, 2, 0, 3, 6, 4] 464
-[1, 6, 2, 5, 7, 4, 0, 3] 318
-[1, 6, 4, 7, 0, 3, 5, 2] 441
-[1, 7, 5, 0, 2, 4, 6, 3] 352
-[2, 0, 6, 4, 7, 1, 3, 5] 541
-[2, 4, 1, 7, 0, 6, 3, 5] 513
-[2, 4, 1, 7, 5, 3, 6, 0] 551
-[2, 4, 6, 0, 3, 1, 7, 5] 479
-[2, 4, 7, 3, 0, 6, 1, 5] 481
-[2, 5, 1, 4, 7, 0, 6, 3] 337
-[2, 5, 1, 6, 0, 3, 7, 4] 494
-[2, 5, 1, 6, 4, 0, 7, 3] 415
-[2, 5, 3, 0, 7, 4, 6, 1] 278
-[2, 5, 3, 1, 7, 4, 6, 0] 387
-[2, 5, 7, 0, 3, 6, 4, 1] 319
-[2, 5, 7, 0, 4, 6, 1, 3] 397
-[2, 5, 7, 1, 3, 0, 6, 4] 381
-[2, 6, 1, 7, 4, 0, 3, 5] 488
-[2, 6, 1, 7, 5, 3, 0, 4] 523
-[2, 7, 3, 6, 0, 5, 1, 4] 489
-[3, 0, 4, 7, 1, 6, 2, 5] 302
-[3, 0, 4, 7, 5, 2, 6, 1] 423
-[3, 1, 4, 7, 5, 0, 2, 6] 302
-[3, 1, 6, 2, 5, 7, 0, 4] 491
-[3, 1, 6, 2, 5, 7, 4, 0] 493
-[3, 1, 6, 4, 0, 7, 5, 2] 470
-[3, 1, 7, 4, 6, 0, 2, 5] 297
-[3, 1, 7, 5, 0, 2, 4, 6] 437
-[3, 5, 0, 4, 1, 7, 2, 6] 353
-[3, 5, 7, 1, 6, 0, 2, 4] 232
-[3, 5, 7, 2, 0, 6, 4, 1] 346
-[3, 6, 0, 7, 4, 1, 5, 2] 499
-[3, 6, 2, 7, 1, 4, 0, 5] 356
-[3, 6, 4, 1, 5, 0, 2, 7] 341
-[3, 6, 4, 2, 0, 5, 7, 1] 352
-[3, 7, 0, 2, 5, 1, 6, 4] 489
-[3, 7, 0, 4, 6, 1, 5, 2] 405
-[3, 7, 4, 2, 0, 6, 1, 5] 410
-[4, 0, 3, 5, 7, 1, 6, 2] 392
-[4, 0, 7, 3, 1, 6, 2, 5] 328
-[4, 0, 7, 5, 2, 6, 1, 3] 434
-[4, 1, 3, 5, 7, 2, 0, 6] 404
-[4, 1, 3, 6, 2, 7, 5, 0] 556
-[4, 1, 5, 0, 6, 3, 7, 2] 291
-[4, 1, 7, 0, 3, 6, 2, 5] 344
-[4, 2, 0, 5, 7, 1, 3, 6] 424
-[4, 2, 0, 6, 1, 7, 5, 3] 434
-[4, 2, 7, 3, 6, 0, 5, 1] 239
-[4, 6, 0, 2, 7, 5, 3, 1] 404
-[4, 6, 0, 3, 1, 7, 5, 2] 394
-[4, 6, 1, 3, 7, 0, 2, 5] 294
-[4, 6, 1, 5, 2, 0, 3, 7] 441
-[4, 6, 1, 5, 2, 0, 7, 3] 357
-[4, 6, 3, 0, 2, 7, 5, 1] 419
-[4, 7, 3, 0, 2, 5, 1, 6] 418
-[4, 7, 3, 0, 6, 1, 5, 2] 330
-[5, 0, 4, 1, 7, 2, 6, 3] 432
-[5, 1, 6, 0, 2, 4, 7, 3] 399
-[5, 1, 6, 0, 3, 7, 4, 2] 419
-[5, 2, 0, 6, 4, 7, 1, 3] 550
-[5, 2, 0, 7, 3, 1, 6, 4] 479
-[5, 2, 0, 7, 4, 1, 3, 6] 546
-[5, 2, 4, 6, 0, 3, 1, 7] 524
-[5, 2, 4, 7, 0, 3, 1, 6] 457
-[5, 2, 6, 1, 3, 7, 0, 4] 483
-[5, 2, 6, 1, 7, 4, 0, 3] 383
-[5, 2, 6, 3, 0, 7, 1, 4] 460
-[5, 3, 0, 4, 7, 1, 6, 2] 477
-[5, 3, 1, 7, 4, 6, 0, 2] 468
-[5, 3, 6, 0, 2, 4, 1, 7] 473
-[5, 3, 6, 0, 7, 1, 4, 2] 396
-[5, 7, 1, 3, 0, 6, 4, 2] 386
-[6, 0, 2, 7, 5, 3, 1, 4] 454
-[6, 1, 3, 0, 7, 4, 2, 5] 271
-[6, 1, 5, 2, 0, 3, 7, 4] 403
-[6, 2, 0, 5, 7, 4, 1, 3] 309
-[6, 2, 7, 1, 4, 0, 5, 3] 371
-[6, 3, 1, 4, 7, 0, 2, 5] 313
-[6, 3, 1, 7, 5, 0, 2, 4] 322
-[6, 4, 2, 0, 5, 7, 1, 3] 402
-[7, 1, 3, 0, 6, 4, 2, 5] 326
-[7, 1, 4, 2, 0, 6, 3, 5] 505
-[7, 2, 0, 5, 1, 4, 6, 3] 367
-[7, 3, 0, 2, 5, 1, 6, 4] 574
-  587
+Data Set #1
+minimum cost = $5.35
+Data Set #2
+minimum cost = $17.14
+Data Set #3
+minimum cost = $11.51
+Data Set #4
+minimum cost = $1.77
+Data Set #5
+minimum cost = $8.30
+Data Set #6
+minimum cost = $10.88
+Data Set #7
+minimum cost = $16.13
+Data Set #8
+minimum cost = $2.06
+Data Set #9
+minimum cost = $9.85
+Data Set #10
+minimum cost = $21.14
+Data Set #11
+minimum cost = $6.88
+Data Set #12
+minimum cost = $2.23
+Data Set #13
+minimum cost = $10.58
+Data Set #14
+minimum cost = $8.47
+Data Set #15
+minimum cost = $12.67
+Data Set #16
+minimum cost = $5.91
+Data Set #17
+minimum cost = $20.79
+Data Set #18
+minimum cost = $7.23
+Data Set #19
+minimum cost = $5.73
+Data Set #20
+minimum cost = $6.22
+Data Set #21
+minimum cost = $8.16
+Data Set #22
+minimum cost = $11.91
+Data Set #23
+minimum cost = $8.92
+Data Set #24
+minimum cost = $16.07
+Data Set #25
+minimum cost = $9.29
+Data Set #26
+minimum cost = $6.07
+Data Set #27
+minimum cost = $15.32
+Data Set #28
+minimum cost = $5.93
+Data Set #29
+minimum cost = $1.40
+Data Set #30
+minimum cost = $17.10
+Data Set #31
+minimum cost = $6.60
+Data Set #32
+minimum cost = $8.04
+Data Set #33
+minimum cost = $7.52
+Data Set #34
+minimum cost = $14.62
+Data Set #35
+minimum cost = $15.55
+Data Set #36
+minimum cost = $16.34
+Data Set #37
+minimum cost = $9.45
+Data Set #38
+minimum cost = $2.02
+Data Set #39
+minimum cost = $4.35
+Data Set #40
+minimum cost = $27.60
+Data Set #41
+minimum cost = $6.11
+Data Set #42
+minimum cost = $15.28
+Data Set #43
+minimum cost = $4.97
+Data Set #44
+minimum cost = $4.91
+Data Set #45
+minimum cost = $4.83
+Data Set #46
+minimum cost = $7.60
+Data Set #47
+minimum cost = $9.54
+Data Set #48
+minimum cost = $3.78
+Data Set #49
+minimum cost = $5.00
+Data Set #50
+minimum cost = $10.51
+Data Set #51
+minimum cost = $3.93
+Data Set #52
+minimum cost = $2.02
+Data Set #53
+minimum cost = $11.82
+Data Set #54
+minimum cost = $13.74
+Data Set #55
+minimum cost = $12.08
+Data Set #56
+minimum cost = $5.04
+Data Set #57
+minimum cost = $8.08
+Data Set #58
+minimum cost = $15.99
+Data Set #59
+minimum cost = $11.42
+Data Set #60
+minimum cost = $12.06
+Data Set #61
+minimum cost = $13.99
+Data Set #62
+minimum cost = $6.92
+Data Set #63
+minimum cost = $13.22
+Data Set #64
+minimum cost = $24.78
