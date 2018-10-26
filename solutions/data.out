@@ -1,128 +1,100 @@
-Data Set #1
-minimum cost = $5.35
-Data Set #2
-minimum cost = $17.14
-Data Set #3
-minimum cost = $11.51
-Data Set #4
-minimum cost = $1.77
-Data Set #5
-minimum cost = $8.30
-Data Set #6
-minimum cost = $10.88
-Data Set #7
-minimum cost = $16.13
-Data Set #8
-minimum cost = $2.06
-Data Set #9
-minimum cost = $9.85
-Data Set #10
-minimum cost = $21.14
-Data Set #11
-minimum cost = $6.88
-Data Set #12
-minimum cost = $2.23
-Data Set #13
-minimum cost = $10.58
-Data Set #14
-minimum cost = $8.47
-Data Set #15
-minimum cost = $12.67
-Data Set #16
-minimum cost = $5.91
-Data Set #17
-minimum cost = $20.79
-Data Set #18
-minimum cost = $7.23
-Data Set #19
-minimum cost = $5.73
-Data Set #20
-minimum cost = $6.22
-Data Set #21
-minimum cost = $8.16
-Data Set #22
-minimum cost = $11.91
-Data Set #23
-minimum cost = $8.92
-Data Set #24
-minimum cost = $16.07
-Data Set #25
-minimum cost = $9.29
-Data Set #26
-minimum cost = $6.07
-Data Set #27
-minimum cost = $15.32
-Data Set #28
-minimum cost = $5.93
-Data Set #29
-minimum cost = $1.40
-Data Set #30
-minimum cost = $17.10
-Data Set #31
-minimum cost = $6.60
-Data Set #32
-minimum cost = $8.04
-Data Set #33
-minimum cost = $7.52
-Data Set #34
-minimum cost = $14.62
-Data Set #35
-minimum cost = $15.55
-Data Set #36
-minimum cost = $16.34
-Data Set #37
-minimum cost = $9.45
-Data Set #38
-minimum cost = $2.02
-Data Set #39
-minimum cost = $4.35
-Data Set #40
-minimum cost = $27.60
-Data Set #41
-minimum cost = $6.11
-Data Set #42
-minimum cost = $15.28
-Data Set #43
-minimum cost = $4.97
-Data Set #44
-minimum cost = $4.91
-Data Set #45
-minimum cost = $4.83
-Data Set #46
-minimum cost = $7.60
-Data Set #47
-minimum cost = $9.54
-Data Set #48
-minimum cost = $3.78
-Data Set #49
-minimum cost = $5.00
-Data Set #50
-minimum cost = $10.51
-Data Set #51
-minimum cost = $3.93
-Data Set #52
-minimum cost = $2.02
-Data Set #53
-minimum cost = $11.82
-Data Set #54
-minimum cost = $13.74
-Data Set #55
-minimum cost = $12.08
-Data Set #56
-minimum cost = $5.04
-Data Set #57
-minimum cost = $8.08
-Data Set #58
-minimum cost = $15.99
-Data Set #59
-minimum cost = $11.42
-Data Set #60
-minimum cost = $12.06
-Data Set #61
-minimum cost = $13.99
-Data Set #62
-minimum cost = $6.92
-Data Set #63
-minimum cost = $13.22
-Data Set #64
-minimum cost = $24.78
+605293 606510 341
+956739 956006 352
+826611 825983 313
+756134 756776 362
+478642 479101 338
+815892 815933 269
+719220 719135 274
+929349 929040 339
+948351 948681 326
+491808 491202 320
+504516 507852 382
+604712 604712 67
+436809 436182 325
+630804 630542 310
+975948 975688 334
+945718 945752 202
+747700 747747 243
+652581 653137 336
+824003 823974 238
+655077 655161 186
+567537 567893 346
+851101 851038 238
+524621 524569 302
+549210 549073 240
+782205 782263 287
+422252 422691 325
+285142 285524 376
+478472 479285 338
+485461 484957 320
+748121 748121 256
+823874 824088 238
+359661 358904 317
+388654 388444 299
+981428 981459 184
+830977 832487 419
+654572 654612 248
+240125 241624 368
+532347 536933 377
+545105 545167 209
+850670 851113 357
+978562 976960 383
+319662 322868 371
+560495 559981 359
+831101 831011 251
+784445 782843 331
+859271 859331 295
+998394 998498 277
+975465 975228 228
+687538 680880 398
+786313 786051 269
+780568 780732 300
+363174 361163 361
+261481 261858 288
+908012 909802 370
+984442 984350 246
+931890 931544 277
+788836 791387 406
+919454 919499 202
+575642 575716 297
+915504 916839 339
+285788 285880 252
+919365 918704 339
+827554 827930 313
+850429 850334 313
+737959 737960 150
+809210 810518 406
+974713 974143 321
+456486 455019 338
+727712 727631 287
+743706 745566 318
+465147 463724 338
+945152 944673 352
+776248 775948 331
+541191 542743 364
+256518 255672 332
+947523 950576 383
+423648 421688 356
+574485 575669 328
+588113 587943 266
+748123 748033 318
+930036 929896 264
+982165 982843 383
+806280 806281 70
+379341 379868 361
+155281 158691 383
+854261 855194 357
+827665 827456 419
+806029 805322 375
+276791 280194 389
+655238 655329 292
+358577 358839 348
+842747 844169 388
+612687 612358 297
+810273 809602 344
+431700 431055 312
+281758 283365 358
+984263 984008 352
+884741 885879 370
+724852 724070 362
+869222 869573 388
