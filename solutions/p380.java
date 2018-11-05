@@ -23,7 +23,7 @@ class Main {
 
     static int rec(int t,int ext){
         if(vis[ext])
-            return 9000;
+            return 9999;
         for(forward f: al){
             int src = f.src;
             int st = f.start;
