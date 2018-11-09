@@ -6,49 +6,60 @@ class Main {
     static FastReader fs = new FastReader();
     static int aa,bb,t;
     static boolean memo[][];
+    static String[] ans;
+    static int ansIdx;
 
-    static boolean rec(int idx,int a,int b,ArrayList<String> al){
+    static void rec(int idx,int a,int b,String[] al){
         if(a==t || b==t){
-            for(int i=0;i<idx;i++){
-                System.out.println(al.get(i));
+            if(idx<ansIdx){
+                ansIdx = idx;
+                for(int i=0;i<idx;i++){
+                    ans[i] = al[i];
+                }
             }
-            System.out.println("success");
-            return true;
+            /* System.out.println();
+            System.out.println();
+            for(int i=0;i<idx;i++){
+                System.out.println(al[i]);
+            } */
+            return;
         }
         if(memo[a][b] == true)
-            return false;
-        memo[a][b] = true;
+            return;
         if(a!=aa){
-            al.add(idx,"fill A");
-            if(rec(idx+1,aa,b,al))
-                return true;
+            memo[a][b] = true;
+            al[idx] = "fill A";
+            rec(idx+1,aa,b,al);
+            memo[a][b] = false;
         }           
-           
         if(b!=bb){
-            al.add(idx,"fill B");
-            if(rec(idx+1,a,bb,al))
-                return true;
+            memo[a][b] = true;
+            al[idx] = "fill B";
+            rec(idx+1,a,bb,al);
+            memo[a][b] = false;
         }           
         if(a!=0){
-            al.add(idx,"empty A");
-            if(rec(idx+1,0,b,al))
-                return true;
+            memo[a][b] = true;
+            al[idx] = "empty A";
+            rec(idx+1,0,b,al);
+            memo[a][b] = false;
         }           
-            
         if(b!=0){
-            al.add(idx,"empty B");
-            if(rec(idx+1,a,0,al))
-                return true;
+            memo[a][b] = true;
+            al[idx] = "empty B";
+            rec(idx+1,a,0,al);
+            memo[a][b] = false;
         }         
         int tmp = Math.min(a,bb-b);
-        al.add(idx,"pour A B");
-        if(rec(idx+1,a-tmp,b+tmp,al))
-            return true; 
+        memo[a][b] = true;
+        al[idx] = "pour A B";
+        rec(idx+1,a-tmp,b+tmp,al);
+        memo[a][b] = false;
         tmp = Math.min(aa-a,b);
-        al.add(idx,"pour B A");
-        if(rec(idx+1,a+tmp,b-tmp,al))
-            return true;
-        return false;  
+        memo[a][b] = true;
+        al[idx] = "pour B A";
+        rec(idx+1,a+tmp,b-tmp,al);
+        memo[a][b] = false;
     }
 
     public static void main(String[] args) {
@@ -60,9 +71,14 @@ class Main {
             aa = Integer.parseInt(st.nextToken());
             bb = Integer.parseInt(st.nextToken());
             t = Integer.parseInt(st.nextToken());
-            System.out.println(t);
             memo = new boolean[aa+1][bb+1];
-            rec(0,0,0,new ArrayList<String>());
+            ans = new String[1000000];
+            ansIdx = 1000000;
+            rec(0,0,0,new String[1000000]);
+            for(int i=0;i<ansIdx;i++){
+                System.out.println(ans[i]);
+            }
+            System.out.println("success");
         }
     }
 
