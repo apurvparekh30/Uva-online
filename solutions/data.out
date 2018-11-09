@@ -1,5 +1,1187 @@
-There are 1 swap maps for input data set 1.
-There are 5 swap maps for input data set 2.
-There are 2 swap maps for input data set 3.
-There are 3 swap maps for input data set 4.
-There are 21 swap maps for input data set 5.
+fill A
+pour A B
+fill A
+pour A B
+success
+fill A
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+success
+fill A
+pour A B
+fill A
+pour A B
+success
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+success
+fill A
+success
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+fill A
+pour A B
+empty B
+pour A B
+fill A
+pour A B
+success
