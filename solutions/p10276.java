@@ -1,56 +1,45 @@
 import java.util.*;
 import java.io.*;
 
-class Main{
+class Main {
 
     static FastReader fs = new FastReader();
-    static int n,h;
+    static int n;
+    static ArrayDeque<Integer> st[];
+    static int ans = 0;
 
-    /* public static void main(String[] args) {
-        int tc = fs.nextInt();
-        boolean flag = false;
-        while(tc-- > 0){
-            n = fs.nextInt();
-            h = fs.nextInt();
-            int till = (1<<n);
-            if(flag)
-                System.out.println();
-            flag = true;
-            for(int i=0;i<till;i++){
-                if(Integer.bitCount(i)==h){
-                    String s = "00000000000000000" +Integer.toBinaryString(i);
-                    System.out.printf("%s\n",s.substring(s.length()-n));
-                }
+
+    static void rec(int no,int peg){
+        if(peg == n)
+            return;
+        if(st[peg]==null){
+            st[peg] = new ArrayDeque<>();
+            st[peg].addLast(no);
+            ans++;
+            rec(no+1,peg);
+            return;
+        }
+        for(int i=0;i<=peg;i++){
+            int tmp = st[i].peekLast();
+            int t = (int) Math.sqrt(tmp+no);
+            if((t*t) == (tmp+no)){
+                ans++;
+                st[i].addLast(no);
+                rec(no+1,peg);
+                return;
             }
-            
         }
-    } */
-
-    static void rec(int pos,int cnt,char []comb){
-        if(n-pos < h-cnt)
-            return;
-        if(cnt == h){
-            System.out.println(new String(comb));
-            return;
-        }
-        comb[pos]='0';
-        rec(pos+1,cnt,comb);
-        comb[pos]='1';
-        rec(pos+1,cnt+1,comb);
-        comb[pos]='0';
+        rec(no,peg+1);
     }
 
     public static void main(String[] args) {
         int tc = fs.nextInt();
-        boolean flag = false;
         while(tc-- > 0){
             n = fs.nextInt();
-            h = fs.nextInt();
-            if(flag)
-                System.out.println();
-            flag = true;
-            
-            rec(0,0,new char[n]);
+            st = new ArrayDeque[n];
+            ans = 0;
+            rec(1,0);
+            System.out.println(ans);
         }
     }
 
