@@ -6,37 +6,37 @@ class Main {
     static FastReader fs = new FastReader();
     static char[] s;
     static int n;
-    static char[] ans;
-
-    static void rec(int idx) {
-        if (idx == s.length) {
+    static char[]ans;
+    
+    static boolean rec(int idx){
+        if(idx==s.length){
+            n--;
             ans[idx] = '\0';
-            System.out.println(new String(ans, 0, idx));
-            return;
+            if(n==0){
+                System.out.println(new String(ans,0,idx));
+                return true;
+            }
+            return false;
         }
-        for (int i = idx; i >= 1; i--)
-            ans[i] = ans[i - 1];
-        for (int i = 0; i <= idx; i++) {
+        for(int i=idx;i>=1;i--)
+            ans[i] = ans[i-1];
+        for(int i=0;i<=idx;i++){
             ans[i] = s[idx];
-            rec(idx + 1);
-            ans[i] = ans[i + 1];
+            if(rec(idx+1))
+                return true;
+            ans[i] = ans[i+1];
         }
+        return false;
     }
 
     public static void main(String[] args) {
-        boolean flag = false;
-        while (true) {
-            String ln = fs.nextLine();
-            if (ln == null || ln.isEmpty())
-                break;
-            s = new StringTokenizer(ln).nextToken().toCharArray();
-            ans = new char[s.length + 1];
-            if(flag)
-                System.out.println();
-            flag = true;
+        int tc = fs.nextInt();
+        for(int t=1;t<=tc;t++){
+            s = fs.next().toCharArray();
+            n = fs.nextInt();
+            ans = new char[s.length+1];
             rec(0);
         }
-
     }
 
     static class FastReader {
