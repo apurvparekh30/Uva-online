@@ -1,25 +1,20 @@
-Set #1
- 0: 170 725
- 1: 335 501
-IMBALANCE = 59.00000
-
-Set #2
- 0: 963
- 1: 146 962
- 2: 282 828
- 3: 465 706
-IMBALANCE = 250.00000
-
-Set #3
- 0: 392 943
- 1: 437 828
-IMBALANCE = 70.00000
-
-Set #4
- 0: 383
- 1: 293
- 2: 154
- 3:
- 4:
-IMBALANCE = 688.00000
-
+Case 1: 1
+Case 2: 1
+Case 3: 1
+Case 4: 1
+Case 5: 2
+Case 6: 1
+Case 7: -1
+Case 8: 1
+Case 9: -1
+Case 10: 2
+Case 11: 3
+Case 12: 1
+Case 13: 1
+Case 14: 2
+Case 15: 2
+Case 16: 4
+Case 17: -1
+Case 18: 2
+Case 19: 1
+Case 20: 2
