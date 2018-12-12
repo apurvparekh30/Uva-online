@@ -17,26 +17,30 @@ class Main {
             for (int i = 0; i < m; i++)
                 tm[i] = fs.nextInt();
             int curr = tm[0];
-            int cnt = 1;
+            int cnt = 0;
             int rounds = 0;
-            for(int i=1;i<m;i++){
-                System.out.println(tm[i] + "  " + curr + " " + cnt);
-                if(tm[i] - tm[i-1] > (2*t)){
-                    cnt = 1;
-                    rounds++;
+            boolean first = false;
+            if((m%n)!=0)
+                first = true;
+            for(int i=0;i<m;i++){
+                if(curr < tm[i])
                     curr = tm[i];
-                    continue;
-                }
-                if(cnt >= n){
-                    curr = Math.max(curr + (2*t),tm[i]);
-                    cnt = 1;
-                    rounds++;
-                    continue;
-                }
-                curr = Math.max(curr,tm[i]);
                 cnt++;
+                if(!first){
+                    if(cnt == n){
+                        cnt = 0;
+                        curr+=t+t;
+                        rounds++;
+                    }
+                }
+                else if(cnt == (m%n)){
+                    first = false;
+                    cnt = 0;
+                    curr+=t+t;
+                    rounds++;
+                }
             }
-            System.out.println("ans" + curr + " " + rounds);
+            System.out.println(curr-t + " " + rounds);
         }
     }
 
