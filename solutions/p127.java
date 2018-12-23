@@ -20,16 +20,24 @@ class Main {
                 st[i].addLast(tk.nextToken());
             }
             for (int i = 1; i < 52;) {
+                /* for(int j=0;j<52;j++)
+                    System.out.print(" " + st[j]);
+                System.out.println(); */
                 if (st[i].isEmpty()) {
                     i++;
                     continue;
                 }
                 char[] top, itop;
-                int idx = i - 3;
-                while (idx>=0 && st[idx].isEmpty()){
+                int idx = i-1;
+                int cnt = 0;
+                while(cnt < 3 && idx>=0){
+                    if(!st[idx].isEmpty()){
+                        cnt++;
+                        if(cnt==3)
+                            break;
+                    }
                     idx--;
                 }
-                    
                 if (idx >= 0) {
                     top = st[idx].getLast().toCharArray();
                     itop = st[i].getLast().toCharArray();
@@ -40,8 +48,14 @@ class Main {
                         continue;
                     }
                 }
-                idx = i - 1;
-                while (idx>=0 && st[idx].isEmpty()){
+                idx = i-1;
+                cnt = 0;
+                while(idx>=0){
+                    if(!st[idx].isEmpty()){
+                        cnt++;
+                        if(cnt==1)
+                            break;
+                    }
                     idx--;
                 }
                 if (idx >= 0) {
@@ -59,6 +73,7 @@ class Main {
             int piles = 52;
             ArrayList<Integer> al = new ArrayList<>();
             for (int i = 0; i < 52; i++) {
+                
                 if (st[i].isEmpty())
                     piles--;
                 else
