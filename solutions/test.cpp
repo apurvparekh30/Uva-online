@@ -1,67 +1,66 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <cmath>
-using namespace std;
-
-struct Interval
-{
-    double L, R;
-};
-
-bool comp(const Interval &i1, const Interval &i2)
-{
-    return i1.L < i2.L;
+#include <stdio.h>
+#define MaxN 20010
+int N;
+int p[MaxN], r[MaxN];
+int find(int x) {
+    return x == p[x] ? x : p[x]=find(p[x]);
 }
+int joint(int x, int y) {
 
-int main()
-{  
-    size_t n, l, w;
-    while (cin >> n >> l >> w)
-    {
-        vector<Interval> circles(1);
-        for (size_t i = 0; i < n; ++i)
-        {
-            double pos, radius;
-            cin >> pos >> radius;
-            // Calculate this circle's effective interval [L, R].
-            // Then this problem is identical to 10020 - Minimal coverage.
-            double range = sqrt(radius * radius - (w / 2.0) * (w / 2.0));
-            circles[0].L = pos - range;
-            circles[0].R = pos + range;
-            circles.push_back(circles[0]);
-        }
-        // Sort the circles by increasing left endpoint. 
-        sort(circles.begin() + 1, circles.end(), comp);
-        for(int i=0;i<n;i++)
-            cout << circles[i].L << " " << circles[i].R << "\n";
-        double curL = 0, rReach = 0;
-        size_t i = 1;
-        size_t nSprinklers = 0; 
-        while (rReach < l)
-        {
-            double newCurL = curL;
-            size_t farthest = 0;
-            // Take the interval that covers as far right as possible.
-            for (; i < circles.size(); ++i)
-            {
-                if (circles[i].L > curL)
-                    break;
-                if (circles[i].R >= newCurL)
-                {
-                    newCurL = circles[i].R;
-                    farthest = i;
-                }
-            }
-            if (farthest == 0)
-                break;
-            ++nSprinklers;
-            rReach = curL = newCurL;
-        }
-        if (rReach < l)
-            cout << "-1" << endl;
+    x = find(x), y = find(y);
+    if(x != y) {
+        if(r[x] < r[y])
+            p[x] = y, r[y] += r[x];
         else
-            cout << nSprinklers << endl;
+            p[y] = x, r[x] += r[y];
+        return 1;
+    }
+    return 0;
+}
+void init() {
+    for(int i = 0; i < MaxN; i++)
+        p[i] = i, r[i] = 1;
+}
+int enemyID(int x) {
+    return x+N;
+}
+int main() {
+    while(scanf("%d", &N) == 1) {
+        init();
+        int c, x, y;
+        while(scanf("%d %d %d", &c, &x, &y) == 3) {
+            
+            if(c == 0 && x == 0 && y == 0)  break;
+            if(c == 1) { // setFriend
+                if(find(x) == find(enemyID(y)) || find(y) == find(enemyID(x)))
+                    puts("-1");
+                else {
+                    joint(x, y);
+                    //joint(enemyID(x), enemyID(y));
+                }
+            } else if(c == 2) { // setEnemy
+                 if(find(x) == find(y) || find(enemyID(x))==find(enemyID(y)))
+                    puts("-1");
+                else {
+                    joint(x, enemyID(y));
+                    joint(y, enemyID(x));
+                }
+            } else if(c == 3) { // areFriend
+                /* if(x==73 && y==76)
+                    printf("this is ittttttttttttttttttttttt %d %d ",find(x),find(y)); */
+                if(find(x) == find(y) || find(enemyID(x))==find(enemyID(y)))
+                    puts("1");
+                else
+                    puts("0");
+            } else { // areEnemy
+                if(find(x) == find(enemyID(y)) || find(y) == find(enemyID(x)))
+                    puts("1");
+                else
+                    puts("0");
+            }
+            
+                printf("this is it %d %d %d %d %d ",c,x,y,find(73),find(76));
+        }
     }
     return 0;
 }
