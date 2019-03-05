@@ -32,7 +32,7 @@ int dp(int x,int y){
         ny=ny+dy[i];
         if(nx<0||nx>=n||ny<0||ny>=n){
             continue;
-        }
+        
         if(b[ny][nx]=='B'){
             nx=nx+dx[i];
             ny=ny+dy[i];
