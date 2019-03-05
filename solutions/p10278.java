@@ -5,7 +5,7 @@ class Main {
 
     static FastReader fs = new FastReader();
     static int f,n;
-    static int stations[];
+    static boolean stations[];
     static int []dist;
     static ArrayList<state> g[];
     static final int oo = 987654321;
@@ -32,11 +32,11 @@ class Main {
             f = fs.nextInt();
             n = fs.nextInt();
             n++;
-            stations = new int [f];
+            stations = new boolean [n];
             dist = new int[n];
             g = new ArrayList[n];
             for(int i=0;i<f;i++)
-                stations[i] = fs.nextInt();
+                stations[fs.nextInt()] = true;
             for(int i=1;i<n;i++)
                 g[i] = new ArrayList<>();
             while(true){
@@ -52,9 +52,14 @@ class Main {
                 g[v].add(new state(u,w));
             }
             Arrays.fill(dist,oo);
-            for(int i = 0;i<f;i++){
+            int ans = 0;
+            int max = oo;
+            for(int i = 1;i<n;i++){
+                if(!stations[i])
+                    continue;
                 Queue<state> pq = new PriorityQueue<>();
-                pq.offer(new state(stations[i],0));
+                pq.offer(new state(i,0));
+                dist[i] = 0;
                 while(!pq.isEmpty()){
                     state curr = pq.poll();
                     int v = curr.v;
@@ -69,13 +74,36 @@ class Main {
                     }
                 }
             }
-            int max = 0;
-            int ans = 0;
-            for(int i=1;i<n;i++){
-                if(dist[i] > max){
-                    max = dist[i];
+            for(int i= 1;i<n;i++){
+                int []newDist = Arrays.copyOf(dist,dist.length);
+                newDist[i] = 0;
+                Queue<state> pq = new PriorityQueue<>();
+                pq.offer(new state(i,0));
+                while(!pq.isEmpty()){
+                    state curr = pq.poll();
+                    int v = curr.v;
+                    int d = curr.d;
+                    if(newDist[v] < d)
+                        continue;
+                    for(state next:g[v]){
+                        if(newDist[next.v] > d + next.d){
+                            newDist[next.v] = d + next.d;
+                            pq.offer(new state(next.v,newDist[next.v]));
+                        }
+                    }
+                }
+                int currMax = 0;
+                int j = 1;
+                //System.out.println("from " + i + " " + Arrays.toString(newDist));
+                for(j=1;j<n;j++){
+                    if(newDist[j] > currMax)
+                        currMax = newDist[j];
+                }
+                if(currMax < max){
+                    max = currMax;
                     ans = i;
-                } 
+                }
+                //System.out.println();
             }
             if(flag)
                 System.out.println();
