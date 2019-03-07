@@ -49,7 +49,7 @@ class Main {
                 for(int cr=-l;cr<=l;cr++){
                     for(int cc=-l;cc<=l;cc++){
                         if(cr*cr + cc*cc > l*l)
-                            continue;
+                            continue;x
                         int uu = u + cr;
                         int vv = v + cc;
                         if(uu<=0 || uu>=r || vv<=0 || vv>=c)
