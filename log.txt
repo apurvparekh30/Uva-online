@@ -1,0 +1,1546 @@
+commit 69c312ded2a3ee417dec8fb394f33ee99277ad75
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Mar 28 23:46:23 2019 -0400
+
+    changes
+
+commit d8a569b1a0707d5d3f65dcecdab4c4bf84cfe833
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Mar 28 23:45:12 2019 -0400
+
+    p10400
+
+commit c34db79161840a35d8278835166efe3a0ed5b563
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Mar 28 22:58:47 2019 -0400
+
+    p196.java
+
+commit 56a800be52991b234103ab591e80643488c83038
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Mar 28 22:56:53 2019 -0400
+
+    p196.java
+
+commit 93b022b49fae5bc8ea360b682a604fb5991c6212
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Mar 28 22:52:54 2019 -0400
+
+    Revert " 196 - Spreadsheet - not solved"
+    
+    This reverts commit ae5c762b6add096544f0ae1c2ca1ff3a220d0496.
+
+commit ae5c762b6add096544f0ae1c2ca1ff3a220d0496
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Mar 28 22:47:52 2019 -0400
+
+     196 - Spreadsheet - not solved
+
+commit 553363c9e438926e8b91a142064cfa53fe07b7c2
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Mar 28 20:32:13 2019 -0400
+
+    116 - Unidirectional TSP
+
+commit e386014cc4045beea4f36df624554547f094a126
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Mar 27 00:06:06 2019 -0400
+
+    10943 How do you add?
+
+commit f4ea27f5ecc0542787ee8bd252f33ec649327fd8
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Mar 26 23:25:47 2019 -0400
+
+    11450Wedding Shopping
+
+commit 14dc59036c0ad4f7d0756cd5f9b2bb080e51f394
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Mar 26 23:24:32 2019 -0400
+
+    11450Wedding Shopping
+
+commit 596022771fe107a3e70a543b8d4498f609f142f5
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Mar 26 19:24:25 2019 -0400
+
+    10465 - Homer Simpson
+
+commit eae2642cfee77ab55ad730aff0179c3e93772424
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Mar 7 18:53:36 2019 -0500
+
+    p534.java
+
+commit 4c659f54aeaa7adb25306e8781aaf5eef022bd3d
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Mar 5 11:42:27 2019 -0500
+
+    p10278 p10977 p532
+
+commit cbc441d63dd21cb7f83dd246fcc5d6aafdbbd67f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Mar 5 11:41:35 2019 -0500
+
+    p10977.java
+
+commit e92c570ad40882c7804b612e568426ad12f1a9fa
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Mar 5 00:32:43 2019 -0500
+
+    p532.java p10278.java
+
+commit 5a1b48a3814669a71ee6e5837374854b39d52267
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Dec 26 09:45:22 2018 -0500
+
+    679 - Dropping Balls
+
+commit f3754f37b982c6397ec774dd8b8c432327d08637
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Dec 25 23:22:54 2018 -0500
+
+    10227 - Forests
+
+commit 198245bb1c9b853e92e648234a79d77a47e438b1
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Dec 25 12:29:42 2018 -0500
+
+    10583 Ubiquitous Religions
+
+commit f25216347fa9caae5671cb3f18010d62a645544a
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Dec 25 09:01:53 2018 -0500
+
+    10158 War
+
+commit b103fa96b2eddde9376c529107531ccb1bd2877f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Dec 24 01:57:53 2018 -0500
+
+    417 Word Index
+
+commit 79118e8a26f581870e9362400bd5df1cf06c133e
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Dec 23 03:26:49 2018 -0500
+
+    127 Accordian Patience
+
+commit f3829daee5bdf2a3f086fa627cb3ea713419f54d
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Dec 22 14:17:17 2018 -0500
+
+    10928 My Dear Neighbours
+
+commit 480da640dc2e28d25592d48348bfc35869c76e30
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Dec 20 00:09:57 2018 -0500
+
+    908 Re-connecting Computer Sites
+
+commit b39b261697a8dea7218606023186c0cc85814925
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Dec 19 01:18:17 2018 -0500
+
+    352 The Seasonal War
+
+commit 3dffcbd3b1bc128d16a4e4218d2dc8daf49c8e4a
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Dec 18 23:51:08 2018 -0500
+
+     118 Mutant Flatworld Explorers
+
+commit 8bd8c3151f74712f9bf1d717445c26a2f6591298
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Dec 18 02:42:12 2018 -0500
+
+    11157 - Dynamic Frog
+
+commit 9cad96226e9d7bea7883d421ea3b6277d6fcd7c5
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Dec 16 03:59:55 2018 -0500
+
+    10718 Bit Mask
+
+commit 33127e42e6419c9a75cd193db11a648228ff35e5
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Dec 15 09:30:33 2018 -0500
+
+    10714 - Ants
+
+commit 24627222d4559d0fcc0f74ae8ed5ed92a95c6255
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Dec 13 17:27:48 2018 -0500
+
+    10700 Camel trading
+
+commit 2124b8cc9ecc5cca011cc41ff3f7a3df52742e5f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Dec 12 14:44:13 2018 -0500
+
+    10440 Ferry Loading II
+
+commit da0b4fdd55571f70f98edde98d1c893ab47e33bd
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Dec 10 21:49:55 2018 -0500
+
+     311 Packets
+
+commit d0c12ac0a00c3de8fc8a00d3df0fef3ae0b8b4a6
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Dec 10 19:49:33 2018 -0500
+
+    10152 ShellSort
+
+commit b44114ea0f10c3c81b7ca3a4138d9916696ca387
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Dec 10 00:29:54 2018 -0500
+
+    10340 All in All
+
+commit f5eb7942e7ab52670bd028272b0a8f706d94ed67
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Dec 9 23:29:23 2018 -0500
+
+    10785 The Mad Numerologist
+
+commit 2e7fe73d48f3d03589fa9ff7748c6bf9299c975a
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Dec 4 21:35:57 2018 -0500
+
+    10670 Work Reduction
+
+commit c47fbe2e6eb5beef157a05d078394040b60c5880
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Nov 26 23:03:30 2018 -0500
+
+    11369 Shopaholic
+
+commit ee084c9f131e3d0a1172325fcbbe861cf172592a
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Nov 26 22:54:24 2018 -0500
+
+    11900 Boiled Eggs
+
+commit f8eb3d38fa61e075886d1b9df7eaef9575f99e80
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Nov 26 22:42:15 2018 -0500
+
+     11729 Commando War
+
+commit 068032f99d822c3fe73aa3a6d3428e5a7e8525c2
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Nov 25 22:38:14 2018 -0500
+
+    10763 Foreign Exchange
+
+commit 8d104cde869039a127bf09aed2fd1e9daa04f7c1
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Nov 24 21:33:57 2018 -0500
+
+    10249 The Grand Dinner
+
+commit 289e4ac93af9f0f00018a20c5b39deaa0643624f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Nov 24 17:57:08 2018 -0500
+
+    10037 Bridge
+
+commit cedf305bfef26ea51e53578168b3fa8f318542cf
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Nov 24 10:28:06 2018 -0500
+
+    10026 Shoemaker's Problem
+
+commit 3787ac6531c323b4b48e726182c693e0ee7f3459
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Nov 24 00:26:48 2018 -0500
+
+    12321 Gas Stations
+
+commit 2d9c0dcfed0ebdb9c60874a2bdff0a56f94e9d92
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Nov 21 19:36:28 2018 -0500
+
+    10382 Watering Grass
+
+commit 66edf6cf622ce85b67d64ed37bb4f290243da018
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Nov 20 22:12:36 2018 -0500
+
+    10020 - Minimal coverage
+
+commit 4a61bfe1847a667312116d92e15e26db75662148
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Nov 20 13:19:29 2018 -0500
+
+    1193 Radar Installation
+
+commit 92ab52c781f9fd9914ea9ff8b473d74f521c0d34
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Nov 19 16:20:45 2018 -0500
+
+    410 Station Balance
+
+commit edaef64f7d1492bc16fd5c4f45d489fa8fcb0760
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Nov 16 21:09:06 2018 -0500
+
+    208 Firetruck
+
+commit 09abb0de6ef91cc8735e9ae0b5d1fd9ef38bca73
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Nov 14 21:22:49 2018 -0500
+
+     10063 Knuth's Permutation
+
+commit 6645930bd9b5ee1fc2dc05a13de8175fbd38a9a1
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Nov 14 12:47:41 2018 -0500
+
+    598 Bundling Newspapers
+
+commit ddba3f7894421adf99deea01d14730599fe11ecf
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Nov 14 11:51:34 2018 -0500
+
+    10815 Andy's First Dictionary
+
+commit 65cc06140f9c4361c735c1cfff1ec22fb07230c1
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Nov 13 22:11:03 2018 -0500
+
+    487 Boggle Blitz
+
+commit 5e8ab46c176c0e6fdc9d52145a017ca2ebcb7258
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Nov 13 20:21:45 2018 -0500
+
+    10452 Marcus
+
+commit 4f208afd99d65b734f2a170f3f58a5f8ec193b20
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Nov 12 19:19:07 2018 -0500
+
+    10344 - 23 out of 5
+
+commit bb76ff7336e67470b700654ff4bb1fe9b741457e
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Nov 12 10:07:55 2018 -0500
+
+    10276 Hanoi Tower Troubles Again!
+
+commit 1dedcab5828fe549e88e16bfad4fd901d28b1ea0
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Nov 11 20:47:56 2018 -0500
+
+    729 The Hamming Distance Problem
+
+commit 59db5fe5e1d51379cfaf37ca4952601ba79b3bf3
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Nov 11 19:35:55 2018 -0500
+
+    677 All Walks of length n from the first node
+
+commit 203c317042eac867bd7e9d242e5b24d172f35f9f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Nov 10 14:12:37 2018 -0500
+
+    628 Passwords
+
+commit 9e66bf21828d5b6a89981e29b78921cd188b09c6
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Nov 9 17:45:21 2018 -0500
+
+    571 Jugs
+
+commit 184855c2864a62a440876ed3b94980a7482fb28c
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Nov 6 13:29:52 2018 -0500
+
+    331 Mapping the Swaps
+
+commit 40b886401d5dacf1442b11332bc10e29bd34a3bc
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Nov 6 12:24:30 2018 -0500
+
+    539 - The Settlers of Catan
+
+commit 834a6f3455981e54fdf37022c7982928d2452fc8
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Nov 5 13:57:53 2018 -0500
+
+    380 Call Forwarding
+
+commit cfb6ce1cb0b033ecb0aefe14c3bff78798191544
+Merge: 69e1cd5 b187193
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Nov 4 16:40:25 2018 -0500
+
+     moving to uva directory
+
+commit 69e1cd505b47703eba368a49932697740839cf5d
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Nov 4 16:36:42 2018 -0500
+
+    moving to uva directory
+
+commit b1871932d346b77c04957fa4e75b70524d8c2ab8
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Oct 25 21:29:57 2018 -0400
+
+    10071 Back to High School Physics
+
+commit ca12896a0116b1829d4994d599a8024bcfd480a9
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Oct 25 20:54:26 2018 -0400
+
+    java template
+
+commit b2916e62b5c396ce335cbb5b8b6857f04f4e615f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Oct 25 20:52:37 2018 -0400
+
+    10055 Hashmat the Brave Warrior
+
+commit e07c37f3bfac77a76cc440f23ce3538578aa9789
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Oct 25 20:18:44 2018 -0400
+
+    100 The 3n + 1 problem
+
+commit 1c4235293121e53fb18eee1e5bce6ae02c27f93c
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Oct 25 18:49:48 2018 -0400
+
+    222 Budget Travel
+
+commit 97e3496f6af97121264a91942002c8c82471b648
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Oct 25 13:08:56 2018 -0400
+
+    167 The Sultan's Successors
+
+commit de48d6e640bb114bb19b9c0eed6d20786c465450
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Oct 24 16:09:01 2018 -0400
+
+    11498 Division of Nlogonia
+
+commit 33def9d90fe993ec18fe859fe4fe778a10b98766
+Merge: 319f3b7 f9e11dc
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Oct 24 14:06:56 2018 -0400
+
+    Merge branch 'master' of https://github.com/apurvparekh30/Uva-online
+
+commit 319f3b76e1cd2b62648b62644dd1b9ef87c1f4a1
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Oct 24 14:06:29 2018 -0400
+
+    10268 498-bis
+
+commit f9e11dc60239115334a781d530160d49c8680f0b
+Author: Apurv Parekh <apurvparekh30@gmail.com>
+Date:   Mon Oct 22 13:47:59 2018 -0400
+
+    Update README.md
+
+commit 4c754b559cfb23c533ce7818b29d40060101d95a
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Oct 16 00:24:37 2018 -0400
+
+    removed book
+
+commit a91d8d0c05925dc3d9555dee1586a9ac2380c308
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Oct 4 12:44:09 2018 -0400
+
+    498 Polly the Polynomial
+
+commit 5335d9b0b43082b6553f4e57779d0f17cb9286d2
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Oct 4 00:07:59 2018 -0400
+
+    11847 Cut the Silver Bar
+
+commit 2eb07c6b109c77a54f8f29c966ce395fb93b6200
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Oct 3 22:00:05 2018 -0400
+
+    10916 Factstone Benchmark
+
+commit 559b326cd7d970285c159bb5e7a16903ae1ac1f3
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Oct 3 20:35:55 2018 -0400
+
+     701 The Archeologists' Dilemma
+
+commit e815e56561876ca2f2d3d2801255de9c9d7ccb8f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Oct 3 13:15:48 2018 -0400
+
+    10656 Maximum Sum (II)
+
+commit b89643a0bb9639cf85123f2b09e27f037e8d2775
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Oct 3 10:11:42 2018 -0400
+
+    10408 Farey sequences
+
+commit 848c366c97911972709958628816e691ca19855a
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Sep 27 19:18:48 2018 -0400
+
+    10042 Smith Numbers
+
+commit 359cb09d293d9a0b641516d2c8266c984e46423d
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Sep 27 18:04:36 2018 -0400
+
+    443 Humble Numbers
+
+commit 49a69a5c893c3282d2cebe82444b1645c9da941f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Sep 27 11:16:20 2018 -0400
+
+    10182 Bee Maja
+
+commit 081e022900d8ae3b1c0b2224ee602212d2754323
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 25 15:58:14 2018 -0400
+
+    264 Count on Cantor
+
+commit e51edebe76b3f9996a4e633a4ec3c703856b9bec
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 25 15:39:59 2018 -0400
+
+    11718 Fantasy of a Summation
+
+commit 9bb4fb04fd45e4fe86c2c9b65234f189c394e1c3
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 25 14:36:14 2018 -0400
+
+    11231 Black and white painting
+
+commit 7adea76f12c29c5c127970b6517a491ddbaba1e6
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 25 14:18:12 2018 -0400
+
+    10161 Ant on a Chessboard
+
+commit c41786d7814657989f6afd03631c62dad19e5de8
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 25 12:56:44 2018 -0400
+
+    12004 Bubble Sort
+
+commit 87db11463fa5646913439cad8e8cb40807a3dfdc
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Sep 15 00:49:58 2018 -0400
+
+    10940Throwing cards away II
+
+commit 6dfdc45692748658dfaac5a2de6db26776aeb7d7
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Sep 14 15:11:53 2018 -0400
+
+    10751Chessboard
+
+commit 0d361a226282519e95aa15f677d27eba71d9bb28
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Sep 13 15:46:45 2018 -0400
+
+    11130Billiard bounces
+
+commit 0028742aba1423ad9799d8fce87c84e5a210df3b
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Sep 12 22:12:32 2018 -0400
+
+    11254Consecutive Integers
+
+commit 3447e434eb7017ed5b8038b26110d16e36fd0184
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Sep 12 16:56:32 2018 -0400
+
+    616 Coconuts, Revisited
+
+commit 67bdfb3d14a236cd3110184b3eb9885a12a27649
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 11 14:03:34 2018 -0400
+
+    10346Peter's Smokes
+
+commit a733ba8d05661f64e913bfd4460eb69d4d142c05
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 11 13:21:52 2018 -0400
+
+    1225Digit Counting
+
+commit bdc6735fa8ee29ba4af04a3e1612f1062ae275f7
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 11 12:36:59 2018 -0400
+
+    382Perfection
+
+commit 3754783309ba17f159fc33390ef4a27c420a7414
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 11 12:15:22 2018 -0400
+
+    10773Back to Intermediate Math
+
+commit d2a7bb204833c77e9dfc52c5f5757dd5ddc66489
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 11 11:27:59 2018 -0400
+
+    11875Brick Game
+
+commit a82062e2fceeddb4bbff1a1d9a57153f446d6246
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 11 11:22:04 2018 -0400
+
+    11723Numbering Roads
+
+commit 3838c8955af1ca824f0fc2b5520046fa65536396
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Sep 10 19:15:59 2018 -0400
+
+    10487Closest Sums
+
+commit 6bf914546c891a27512a6b8cd6dc7d390d4ec526
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Sep 10 18:55:42 2018 -0400
+
+    1260Sales
+
+commit 6dbf03342b12b47429f4c8f061b58822b177975f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Sep 10 18:46:25 2018 -0400
+
+    1262Password
+
+commit 93aaf98711308e40534005abf2083e76cbbcf0cf
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Sep 10 16:43:00 2018 -0400
+
+    416LED Test
+
+commit c0bf614b20c6cce3157b22c9feff0e49940cbecb
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Sep 10 13:26:07 2018 -0400
+
+    11034Ferry Loading IV
+
+commit 5c818da7e660771e832efe24e9b872a473ddb81b
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Sep 10 12:43:25 2018 -0400
+
+    10901Ferry Loading III
+
+commit 8e08482d5dafe603c4ae0b94eb4bdaefe7f30c53
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Sep 10 10:13:51 2018 -0400
+
+    10172The Lonesome Cargo Distributor
+
+commit 43936855cbf0b8c8dc3da72365b1cc3bd3151b77
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Sep 10 09:39:38 2018 -0400
+
+    1062 - Containers
+
+commit e84e146503177714b8d8ecea412ad35920be4363
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Sep 6 11:37:31 2018 -0400
+
+    732 Anagrams by Stack
+
+commit 4055aecfff9015cb34fb36c57cec619793aa6670
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Sep 5 15:56:48 2018 -0400
+
+    514Rails
+
+commit 38572507c0a2b5864d6f8e933f6af75b546b3afc
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Sep 5 15:17:14 2018 -0400
+
+    11988Broken Keyboard (a.k.a. Beiju Text)
+
+commit b464ec9c82db2d6317a3bcf56ed12c3335214ddc
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Sep 5 14:51:44 2018 -0400
+
+    11933Splitting Numbers
+
+commit 781e026f19712d5c9433d9e55cc61a1f366d7542
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Sep 5 14:08:19 2018 -0400
+
+    11926Multitasking
+
+commit 2bece4793eb86afce14b118214beb75cc5955c9d
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Sep 5 13:44:18 2018 -0400
+
+    10264The Most Potent Corner
+
+commit df766506b2b6d29607ec99d8a2c455aff69921d0
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Sep 5 10:39:43 2018 -0400
+
+    10258Contest Scoreboard
+
+commit d07e89abe4f78f4890b62d32a36a0f322e8b24df
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Sep 5 09:27:27 2018 -0400
+
+    10107 - What is the Median?
+
+commit 65de3d968d24b14602d4229a46b7b2f07d433044
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 4 23:25:43 2018 -0400
+
+    146ID Codes
+
+commit a8698c79d2991f41dbd36e8699f0b846f3ab9990
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 4 15:07:04 2018 -0400
+
+    11581 Grid Successors
+
+commit b4698d572b723a0c70e7e1114bf8bdf764b61d74
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 4 14:20:28 2018 -0400
+
+    10920 Spiral Tap
+
+commit 2effb85514b8927c67be8f4a323ff18791e67d82
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 4 11:59:27 2018 -0400
+
+    10855 Rotated square
+
+commit b3af3564c910e991f7b07c1663f9afa42df17263
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Sep 4 10:26:32 2018 -0400
+
+    12356 - Army Buddies
+
+commit 429ce0a8902a1a62cfa7efabeefba664d08f272b
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Sep 3 14:08:15 2018 -0400
+
+    11340Newspaper
+
+commit cb82007bcde365287b37ea00a72875da975af52d
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Sep 3 12:28:02 2018 -0400
+
+    10038Jolly Jumpers
+
+commit 28cec9ffe0547cfccf4fba32acf443434cd4e047
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Sep 3 02:07:39 2018 -0400
+
+    11947Cancer or Scorpio
+
+commit 1caa8385f920070216c9e282d65751c0da4acefd
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Sep 3 00:34:37 2018 -0400
+
+    893Y3K Problem
+
+commit d428008976aae1eb58b416b8dd1808f6995e35fa
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Sep 2 21:03:06 2018 -0400
+
+    579Clock Hands
+
+commit 79142c8d02dea7ea0de1e3f5fa80142c942bcf35
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Sep 2 18:53:15 2018 -0400
+
+    10812 - Beat the Spread!
+
+commit b5044344fad6bfe2b3201834c38f9fd8037ac07f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Aug 22 15:24:14 2018 -0400
+
+    637Booklet Printing
+
+commit 6ab4fa3e62cd5f1abd1f4bbbffce589a0d68ee33
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Aug 22 14:04:59 2018 -0400
+
+    161Traffic Lights
+
+commit 1b3d6ca2ea2a1e401cf21b502bb43dc0311af2ab
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Aug 21 10:19:24 2018 -0400
+
+    454 Anagrams
+
+commit f84eeed190d7d5884c5cb4edf7f455026f97d482
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Aug 21 09:32:22 2018 -0400
+
+    195 Anagram
+
+commit e7844ea9113625c90556c229813832a5d8293f86
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Aug 20 20:55:17 2018 -0400
+
+    156 Ananagrams
+
+commit 2ae9daeaa459bd6855c953abb8622b5eaa2987fa
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Aug 20 00:42:47 2018 -0400
+
+    11221 Magic square palindromes.
+
+commit 9ea9d1646c478e4d755f97f05d7190de668b3abc
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Aug 19 18:00:22 2018 -0400
+
+    10945Mother bear
+
+commit 33223b7cfbf909b1a794eaa843ea055b7640c169
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Aug 19 13:30:10 2018 -0400
+
+    401Palindromes
+
+commit f71fe21af59cddc1532e051647c876aa1d85aadb
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Aug 13 17:25:07 2018 -0400
+
+    10813 Traditional BINGO
+
+commit 712db8963b48df6192485e9402aff460a8c59627
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Aug 13 15:50:19 2018 -0400
+
+    10443 Rock, Scissors, Paper
+
+commit 939746bc03111b9b57bed610e7997a8323a56ab0
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Aug 13 13:18:28 2018 -0400
+
+     584 Bowling
+
+commit f40ee9624a900f872d52a187930c8c10d4e66ef3
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Aug 13 00:12:52 2018 -0400
+
+    11459 Snakes and Ladders
+
+commit b7779eb7d3d1c988bceb1087c355af8b8700a1f9
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Aug 12 22:42:46 2018 -0400
+
+     10189 Minesweeper
+
+commit e771596618cb27721c95f675c19bc61e36d86bcf
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Aug 12 19:00:09 2018 -0400
+
+    489 Hangman Judge
+
+commit 81c2975ab4f9be9ae3072ecf06e3be3420d443d9
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Aug 12 17:04:53 2018 -0400
+
+    10284 Chessboard in FEN
+
+commit 9294f3f3dc9fc1a7d6748af272bbedd87dec8bae
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Aug 12 12:20:48 2018 -0400
+
+    696 How Many Knights
+
+commit 8dd040c439e245f10662c96275b215d683cdab49
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Aug 11 23:14:04 2018 -0400
+
+    278 Chess
+
+commit e70c56464e1899382353743b128d03fbf32c0aca
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Aug 11 13:29:55 2018 -0400
+
+    12247 Jollo
+
+commit 9eb866af326d225c146ffe4d9e7753581d3f1dec
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Aug 11 12:28:12 2018 -0400
+
+    10646 What is the Card?
+
+commit beea81ea1c12057a75f9bb3570a92a2f64d2786d
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Aug 10 13:36:36 2018 -0400
+
+    10141 Request for Proposal
+
+commit 5b601765b7022be2eb11bf0694390cf64b031941
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Aug 10 12:42:21 2018 -0400
+
+     573 The Snail
+
+commit f5dd976cc0cdfeb996bdf41d94a11141d604bc0c
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Aug 10 11:46:07 2018 -0400
+
+    462 Bridge Hand Evaluator
+
+commit 49678c0389d55b3cf2e53addf1b5c86b036759ae
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Aug 10 01:22:07 2018 -0400
+
+    11159 Factors and Multiples
+
+commit 407f2a47fd1855b900ec4ca5a0a98db99366b994
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Aug 9 23:58:38 2018 -0400
+
+    11138 Nuts and Bolts
+
+commit c4569b9c7a1ddc81a693497f339642b45fc7ae70
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Aug 9 17:23:24 2018 -0400
+
+    10349 Antenna Placement
+
+commit 09ce2464ec52ea8f236f00f2ad5e692a22b1a4bf
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Aug 9 00:00:31 2018 -0400
+
+    10596 Morning Walk
+
+commit 657db342f1ef26606b062b0145828e02ce0dbacb
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Aug 8 19:45:07 2018 -0400
+
+     10203 Snow Clearing
+
+commit 9baec768be3fb584de3ae773459c37df63d8c543
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Aug 8 18:02:57 2018 -0400
+
+    10054 The Necklace
+
+commit ed37adbb98eb411df25a58d0c4ff40ee0b3c237c
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Aug 7 15:44:39 2018 -0400
+
+    11695 Flight Planning
+
+commit 3bd0cb42d810f1a80f27b9afceaaf66b5ca1e61f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Aug 6 16:55:57 2018 -0400
+
+    10805 Cockroach Escape Networks
+
+commit 70afd03de1fb1701fb2766718248ae9eea8ba474
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Aug 6 11:13:40 2018 -0400
+
+    10459 The Tree Root
+
+commit 471c4c48440e0c78e4b0aca441d6d96280c89f77
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Aug 5 20:55:52 2018 -0400
+
+    11487 Gathering Food
+
+commit e5b1d1ac347460f2ab5e5c542e42598a3796b5e5
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Aug 3 14:15:14 2018 -0400
+
+    p10913 - Walking on a Grid
+
+commit 30bb3b6d083b90ebee15791d15f7586c3c8db3ed
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Aug 2 11:19:08 2018 -0400
+
+    907 Wintering Backpacking Trip
+
+commit 098bd9b4c885172ceb5d9b5e0f4f4f067e981697
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jul 31 13:42:56 2018 -0400
+
+    10401 Injured Queen Problem
+
+commit 11805983c5ba3bd74d6db05a05b159e8f864db10
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jul 31 11:47:02 2018 -0400
+
+    11957 Checkers
+
+commit 9843ee9e46e0352d5b81b386e719adff9500fc6d
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jul 31 10:24:17 2018 -0400
+
+    988 Many Paths, One Destination
+
+commit ae53ba9c8ea6b27d6312dee4f7f2f46063d80e37
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Jul 30 13:50:00 2018 -0400
+
+    10350 Liftless EME
+
+commit 0c807e76f6fe7d005e2b2554fa85c329219848bb
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Jul 30 11:43:12 2018 -0400
+
+    10285 Longest Run on a Snowboard
+
+commit eed1dae8dae6c565512bab6c1ef4f15ab467b50a
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Jul 30 11:20:24 2018 -0400
+
+    452 - Project Scheduling
+
+commit d0237560bc1465cb722f8dae13024270c3ebaad9
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Jul 29 18:34:32 2018 -0400
+
+     12125 March of the Penguins
+
+commit 50bf18c72c8b86db2fd0f0a2851acb1aedb280dd
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Jul 29 10:00:11 2018 -0400
+
+    11506 - Angry Programmer
+
+commit b5f5f922d449be8220fe2a139b9948b229febba0
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Jul 28 18:31:05 2018 -0400
+
+    11380 Down Went The Titanic
+
+commit 2286b71b7bb65321bbaaaa19eb7a3c8f6db4006f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jul 27 23:34:44 2018 -0400
+
+    820 Internet Bandwidth
+
+commit a130a4e9f0b09dc20274808b78e0cb22756428e2
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jul 27 21:20:45 2018 -0400
+
+    259 Software Allocation
+
+commit 6efe10c5a7e4c676920ca8a72fed0f64b99e4bc3
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jul 26 10:32:44 2018 -0400
+
+    1056 Degrees of Separation
+
+commit 7c818ca5bf6e7c6fcdcf5adf486845692d41b4e9
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jul 26 09:02:57 2018 -0400
+
+    334 Identifying Concurrent Events
+
+commit 52d12b6a4ea2128b955669f6cf706eeae92e1982
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Jul 25 21:28:14 2018 -0400
+
+    104 - Arbitrage
+
+commit dc4abb7fca012fdeda17f4439634547d11eb3383
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jul 24 13:20:59 2018 -0400
+
+    11463 Commandos
+
+commit 06cc7552f7f6dc6abf0b0163486f776a62236e08
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jul 24 12:42:27 2018 -0400
+
+    10171 Meeting Prof. Miguel...
+
+commit 58150be44d9f8a8092a65546f552824c543a83fc
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jul 24 10:44:58 2018 -0400
+
+    821 Page Hopping
+
+commit 4ea019c435befe27d3928c4f7a9b869d1ffa16af
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Jul 23 13:14:29 2018 -0400
+
+    10557 XYZZY
+
+commit 87b2c8186d215666813c71c69a2ae44557433b80
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Jul 23 10:51:15 2018 -0400
+
+    10449 Traffic
+
+commit 919e2afcfb10134a3e5594b85c1425d42d9e79a3
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Jul 21 17:46:57 2018 -0400
+
+    558 Wormholes
+
+commit c6c29fda9efc6ee37a977a89b569ed8b8225a309
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jul 20 14:11:50 2018 -0400
+
+    12047 Highest Paid Toll
+
+commit f1103f86558563e87f54586b83ab00b673adff0c
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jul 20 11:51:58 2018 -0400
+
+    11492 Babel
+
+commit 3fe9b438536a32d0e0ce9468622afb8d1316085f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jul 20 10:53:46 2018 -0400
+
+    10801 - Lift Hopping
+
+commit ce7c8319a82cd2b78c2507d282a63bb1f413fbe5
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jul 20 10:52:50 2018 -0400
+
+    11492 - Babel
+
+commit 9f6dbc7d2cf25b72dd0a323aad15a062146c6a4f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jul 19 12:13:21 2018 -0400
+
+    10801 Lift Hopping
+
+commit 169d9dc7a761b5b833e9ad4367741b58a55cdae9
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jul 19 09:29:49 2018 -0400
+
+    10986 Sending email
+
+commit 456d6f6c845407e0b6a605f05fcc3c22d9d65940
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jul 19 09:04:42 2018 -0400
+
+    shell script for git
+
+commit d87e0a86e06a2bbd53c3ae5790df6f31951d5fe9
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jul 19 09:00:35 2018 -0400
+
+    1112 Mice and Maze
+
+commit 4aeb730944388805971394b610e469094f99fce1
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jul 19 08:26:13 2018 -0400
+
+    929 Number Maze
+
+commit 5cfb5f7a4bdebbdf1718bbc9910dd147d529716d
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Jul 18 21:37:09 2018 -0400
+
+    12160 Unlock the Lock
+
+commit 82dd9b96d09f164aa3c9359941b28872f316dfe9
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Jul 18 20:30:40 2018 -0400
+
+    11101 - Mall Mania
+
+commit 135495f1716e835460a41f547dad70d8653651a8
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jul 17 13:53:17 2018 -0400
+
+    314 Robot
+
+commit b247a2cab9a41815ce6d6a42e7a59a0ee1681435
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jul 17 11:40:29 2018 -0400
+
+    10653 Bombs! NO they are Minesgit add .
+
+commit dc05e3c78d0928dc9b2c6ab652c42a38ab23c56c
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jul 17 10:55:18 2018 -0400
+
+    924 Spreading The News
+
+commit 038a6d91fbab4e1be5f8f164ea6024bada71451c
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jul 17 10:09:32 2018 -0400
+
+    429 Word Transformation
+
+commit 4ac3701b81d46ed4f49db4becb10fd24b5554c8c
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Jul 16 13:23:56 2018 -0400
+
+    10600 ACM Contest and Blackout
+
+commit 952ec2bf0d3f31665a471eacac272088b1e79590
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Jul 16 11:37:30 2018 -0400
+
+    10369 Arctic Network
+
+commit 5a9d30465df822fdc8d13751021d3305d19e9698
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Jul 16 09:59:22 2018 -0400
+
+    10048 Audiophobia
+
+commit 7130069b35935e489e643cd23575a4277003c11d
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Jul 15 20:00:11 2018 -0400
+
+    11747 Heavy Cycle Edges
+
+commit a816895987d8a3abb183abe34cda1447f0b1e1c1
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Jul 15 18:51:22 2018 -0400
+
+    11631 Dark roads
+
+commit 0e5fe7ae303b91f791e2a4390e97f1720b181387
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Jul 15 17:45:35 2018 -0400
+
+     11228 Transportation system.
+
+commit 2d3ed9110d5cd319662aa47c3eee54c3b5678127
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jul 13 20:42:15 2018 -0400
+
+    11838 Come and Go
+
+commit 12f63e32c820147fac0351a7d997760b9b63cad9
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jul 13 20:07:53 2018 -0400
+
+    11504 Dominos
+
+commit 57122110570d6da1a32cba9a279d77d5139a1dcb
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jul 13 12:16:37 2018 -0400
+
+    247 Calling Circles
+
+commit af5b6889cd267d260e94c03864266600b71a908f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jul 12 12:24:41 2018 -0400
+
+     10765 Doves and bombs
+
+commit d23cf26032d04a4a24c03236490e4913a05d76ea
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jul 12 10:06:54 2018 -0400
+
+    796 Critical Links
+
+commit d1ed4975cc012bc747a0390cf379a27b9c88c9ae
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Jul 11 11:19:22 2018 -0400
+
+    315 Network
+
+commit c98fe0d5eb447ed67be22654420af26496a135ff
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jul 10 12:00:51 2018 -0400
+
+    11396 Claw Decomposition
+
+commit b4c26c74cb0c893c270aaf82fb2349eff700a053
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jul 10 10:59:19 2018 -0400
+
+     11080 Place the Guards
+
+commit ee712f7447dfb1c9097fa3c826e349299dbfd1bf
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jul 10 10:01:37 2018 -0400
+
+    10004 Bicoloring
+
+commit 04dc8ac783dc8eae269ad1b29ecb439ff06f1d45
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Jul 9 10:56:49 2018 -0400
+
+    11060 Beverages
+
+commit 86e9c4b150a01b19412e07daee41c08f92f6795c
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Jul 9 09:27:48 2018 -0400
+
+    10305 Ordering Tasks
+
+commit 0371ca2dc6530fd3d6a44be039ea8d5d5d263db7
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Jul 8 18:40:48 2018 -0400
+
+     872 Ordering
+
+commit 92192061daffa37f91a148c9e5255a5965d2e671
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Jul 7 15:11:31 2018 -0400
+
+    11953 Battleships
+
+commit b493db4960be9709a0cbf39203bdf1b16f6db076
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Jul 7 14:24:08 2018 -0400
+
+    11094 Continents
+
+commit d5ccd432dabe13264d97d5aafe60ba6b8ccd3a6c
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Jul 7 12:35:58 2018 -0400
+
+    1103 Ancient Messages
+
+commit 70fdb37aefd8f19a41fd1b3838beaff070746f83
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jul 6 16:06:06 2018 -0400
+
+    12442 - Forwarding Emails
+
+commit 6ef23d17ae2b1950822714e18625ce62f2332a38
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jul 6 14:00:52 2018 -0400
+
+    11906 - Knight in a War Grid
+
+commit 904943ed35ef12fffb0223857ce692a5e2ed5b54
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jul 6 11:41:24 2018 -0400
+
+     11831 Sticker Collector Robot
+
+commit 8d030094b4059a60368f2a6b0648d8a6d712f769
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jul 5 12:10:02 2018 -0400
+
+    10943 How do you add?
+
+commit c5b7b64e33ea4dd74ca83f279ac88267a2b1e95c
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jul 5 10:55:05 2018 -0400
+
+    10721 Bar Codes
+
+commit bb5a4221c76951564541b7eaa794285b81623f5c
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jul 5 09:33:26 2018 -0400
+
+    10337 Flight Planner
+
+commit 4b15f3a6c23270568a676b4e39dca0af82691418
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Jul 4 22:07:21 2018 -0400
+
+    11284 Shopping Trip
+
+commit bf5815acbee1569febd9cee68f35e6eef707a790
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Jul 4 12:07:19 2018 -0400
+
+    10496 Collecting Beepers
+
+commit ff9eda754d97ee06a3f358fd3f8e69b879413d3d
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jul 3 15:39:48 2018 -0400
+
+    216 Getting in Line
+
+commit 7f4f2fbe6b7f5f6ec97d7b11eb02808a7346349c
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jul 3 10:28:14 2018 -0400
+
+    11517 Exact Change
+
+commit cb6ca6b59f9ccaf618049ebbd6b6bc73031fd9f5
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon Jul 2 16:45:10 2018 -0400
+
+    10306 e-Coins
+
+commit 022d652ea643123d4325676473c2d100d75abdbe
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jun 29 12:46:25 2018 -0400
+
+    357 Let Me Count The Ways
+
+commit 1ae906d9e42b09e5d6d936fd0dee79bfadfe7c9b
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jun 29 11:37:48 2018 -0400
+
+    11566 Let's Yum Cha!
+
+commit 818143e1a661fe66c8263357f66f00a654f2dcd6
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jun 28 13:35:45 2018 -0400
+
+    10819 Trouble of 13-Dots
+
+commit a72ceb7042edc0ec3de22ae8f981f3d0e6d7ddf2
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jun 28 11:27:08 2018 -0400
+
+    10616 Divisible Group Sums
+
+commit 2c3a8818a03e9d40e78e3d0a3299b5a93b3b8f9d
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jun 26 15:40:58 2018 -0400
+
+     11790-Murcia's Skyline
+
+commit 0b48079d43c1bf57fca6e91f85a235f03bd43318
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Tue Jun 26 10:30:14 2018 -0400
+
+    11456-Tranisorting
+
+commit 67735be509640a8014b1a78325a5459a99bada4d
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Jun 23 15:50:51 2018 -0400
+
+    481whatsGoesUp
+
+commit e63dee55d9b03feb2f8fd1d6c1f9c4a4de98ebbd
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Jun 23 12:42:33 2018 -0400
+
+    11951Area
+
+commit 6c6cd1f9273f2f0183cb415ac133e2a5d617434f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jun 22 16:11:03 2018 -0400
+
+    10827maximumSumOnTorus
+
+commit 0a98479725dc1d852e0ad2e1d5a748719fdbbf77
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jun 22 15:27:54 2018 -0400
+
+    108MaximumSum
+
+commit bfefb1ae1aac1a61cb1bf12163d0e1fbd14d457f
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jun 21 13:13:34 2018 -0400
+
+    10755GarbageHeap
+
+commit b1c02abf0c86fae58f6bcae8931bf55449cd11c9
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jun 21 11:13:31 2018 -0400
+
+    10684TheJackpot
+
+commit 20da1d1c66d4dbbff883e4f13a458cf102eeebba
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jun 21 11:00:06 2018 -0400
+
+    507JillRidesAgain
+
+commit 6c1b3d3e32fa3ab3a73a5d54de6a336b51d88bc4
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jun 15 18:34:36 2018 -0400
+
+    backtracking - a match making problem
+
+commit d9275d9b9bf1bd5d5185bde8a78dc1c0e86a2aae
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri Jun 15 11:49:22 2018 -0400
+
+     The trip and Dragon of Loowater
+
+commit 08152cc9dffd507282f88afbd357894c63034b7b
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Thu Jun 14 09:00:14 2018 -0400
+
+    13thJune
+
+commit 8fc18ee9e1e32abcd8a4e393041beeccdec32687
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed Jun 13 08:06:14 2018 -0400
+
+    12thJune
+
+commit 617bd57b6a040f04d32648eab5bb4248b58ef23e
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sat Jun 9 10:49:01 2018 -0400
+
+    9th June
+
+commit 66c32b9bbff4a4dc182015320b5346dbd1f438e1
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Sun Jun 3 11:20:45 2018 -0400
+
+    3rdJune18
+
+commit 200944a1d8c91449301a3410dbbb0be0da63f1d5
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon May 28 20:04:16 2018 -0400
+
+    28thMay
+
+commit 74b428241fd14ed21d438e20a047b5da3992b9a5
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed May 23 19:03:07 2018 -0400
+
+    23May18
+
+commit d69bd1c8fac9ec815d68d8ba20989cacceae52ad
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed May 23 13:23:23 2018 -0400
+
+    p11286.cpp
+
+commit 7b664de49c83f861be95c60c4c50fa074df8e3f0
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed May 23 11:43:16 2018 -0400
+
+    removed google problems
+
+commit ac46938a620b1578c3fb1dcc584599d20027e4aa
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Wed May 23 11:40:04 2018 -0400
+
+    23may18
+
+commit 6cb65762520e5b762f22a5b521f95119b61f6168
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Mon May 21 17:14:11 2018 -0400
+
+    waking_up_brain
+
+commit 6b695a5d8b67e0554809ae36efe539fe0f4a3218
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri May 18 13:39:31 2018 -0400
+
+    p793
+
+commit 388ee2c399de1648fae1fae57c257cd3c1fa2cf6
+Merge: 20036f6 8701326
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri May 18 04:44:00 2018 -0400
+
+    Merge https://github.com/apurvparekh30/Uva-online
+
+commit 20036f60e0e516bbb8009321f8bf1c30d612d101
+Author: apurvparekh30 <apurvparekh30@gmail.com>
+Date:   Fri May 18 04:42:50 2018 -0400
+
+    first commit
+
+commit 87013261b20e625a75b2f68fca5ca8c83eff633b
+Author: Apurv Parekh <apurvparekh30@gmail.com>
+Date:   Fri May 18 04:34:46 2018 -0400
+
+    Initial commit
