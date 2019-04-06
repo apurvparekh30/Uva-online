@@ -106,12 +106,15 @@ class Main {
             Queue<state> pq = new PriorityQueue<>();
             pq.offer(new state(0,0.0));
             dist[0] = 0.0;
+            
             while(!pq.isEmpty()){
                 state curr = pq.poll();
                 int u = curr.v;
                 double c = curr.c;
                 if(dist[u] < c)
                     continue;
+                if(u == 1)
+                    break;
                 for(state next:adj.get(u)){
                     if(dist[next.v] > c + next.c){
                         dist[next.v] = c + next.c;
