@@ -2,6 +2,7 @@
 #include <vector>
 #include <queue>
 #include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 
 typedef vector<int> vi;
@@ -35,11 +36,15 @@ int main() {
 				}
 			}
 		}
-
+		for(int j=0;j<V;j++){
+			for(int i=0;i<AdjList[j].size();i++)
+				cout<<AdjList[j][i] << " ";
+			cout<<endl;
+		}
+			
 		vi color(V, 1e9);
 		bool isBipartite;
 		int ans = 0;
-
 		for (int s = 0; s < V; s++) {
 			if (color[s] != 1e9)
 				continue;
@@ -56,6 +61,7 @@ int main() {
 				q.pop();
 				for (int j = 0; j < (int) AdjList[u].size(); j++) {
 					int v = AdjList[u][j];
+					//printf("%d %d\n",u,v);
 					if (color[v] == 1e9) {
 						color[v] = 1 - color[u];
 						colorCount[color[v]]++;

@@ -11,15 +11,15 @@ class Main {
     static boolean dfs(int u,int color){
         colorCount[color] += 1;
         mycolor[u] = color;
+        boolean ans = true;
         for(int v:map.get(u)){
             if(mycolor[v] == mycolor[u]){
-                return false;
+                ans = false;
             }
             if(mycolor[v]==-1)
-                if(!dfs(v,1-color))
-                    return false;
+                ans = ans & dfs(v,1-color);
         }
-        return true;
+        return ans;
     }
 
     public static void main(String[] args) {
@@ -35,12 +35,15 @@ class Main {
                 int v = fs.nextInt();
                 while(v-- > 0) {
                     int node = fs.nextInt();
-                    if(node >n)
-                        continue;
-                    map.get(i).add(node);
-                    map.get(node).add(i);
+                    if(node<=n){
+                        if(!map.get(i).contains(node))
+                            map.get(i).add(node);
+                        if(!map.get(node).contains(i))
+                            map.get(node).add(i);
+                    }
                 }
             }
+            //System.out.println(map);
             int ans = 0;
             mycolor = new int[n+1];
             Arrays.fill(mycolor,-1);
@@ -49,6 +52,7 @@ class Main {
                     continue;
                 colorCount = new int[2];
                 boolean ret = dfs(i,0);
+                //System.out.println(Arrays.toString(mycolor));
                 if(ret){
                     ans += Math.max(colorCount[0],colorCount[1]);
                 }
