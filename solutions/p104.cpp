@@ -30,7 +30,7 @@ int main(){
             for(int k=1;k<=n;k++)
                 for(int i=1;i<=n;i++)
                     for(int j=1;j<=n;j++){
-                        double temp=mat[s-1][i][k]*mat[0][k][j];
+                        double temp=mat[s-1][i][k]*mat[0][k][j];  /// why not mat[s-1][k][j]
                         if(mat[s][i][j]<temp){
                             mat[s][i][j]=temp;
                             path[s][i][j]=k;
