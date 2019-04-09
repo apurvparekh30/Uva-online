@@ -29,6 +29,38 @@ class Main {
         }
         return dp[u] = 1 + ans;
     }
+
+    static class state {
+        int u,c;
+        state(int u,int c){
+            this.u = u;
+            this.c = c;
+        }
+    }
+
+    static int bfs(){
+        Queue<state> q = new ArrayDeque<>();
+        q.offer(new state(s,0));
+        int longest = 0;
+
+        while(!q.isEmpty()){
+            state curr = q.poll();
+            if(dp[curr.u] < curr.c){
+                dp[curr.u] = curr.c;
+                if(longest < curr.c){
+                    longest = curr.c;
+                    t = curr.u;
+                }
+                else if(longest == curr.c && t > curr.u){
+                    t = curr.u;
+                }
+                for(int v:adj.get(curr.u)){
+                    q.offer(new state(v,curr.c+1));
+                }
+            }
+        }
+        return longest;
+    }
     public static void main(String[] args) {
         int tc = 0;
         boolean line = false;
@@ -52,17 +84,14 @@ class Main {
             dp = new int[n+1];
             Arrays.fill(dp,-1);
             next = new int[n+1];
-            int ans = dfs(s)-1;
-            if(line)
-                System.out.println();
-            line = true;
-            int curr = s;
-            System.out.println(Arrays.toString(next));
+            //int ans = dfs(s)-1;
+            int ans = bfs();
+            /* int curr = s;
             while(curr!=0){
                 t = curr;
                 curr = next[curr];
-            }
-            System.out.printf("Case %d: The longest path from %d has length %d, finishing at %d.\n",tc,s,ans,t);
+            } */
+            System.out.printf("Case %d: The longest path from %d has length %d, finishing at %d.\n\n",tc,s,ans,t);
         }
     }
 }

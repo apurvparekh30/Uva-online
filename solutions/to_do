@@ -14,6 +14,10 @@ p10926   -- --    1 -> 3 2    3->2    2->4    // good test case for DAG
 /// Why we only flag edges from MST for second best ST
 ... Because flaging other edges will get only same MST
 
+/// why not just to use Bellman Ford for logest path in graph
+
+/// what is difference between MSP and TSP
+
 
 webservice vs webapi
 libray vs api vs framework
