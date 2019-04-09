@@ -6,61 +6,35 @@ class Main {
     static int n;
     static Map<Integer,List<Integer>> adj;
     static int s;
-    static int dp[];
-    static int t;
-    static int []next;
+    static pair dp[];
 
-    static int dfs(int u){
-        if(dp[u]!=-1)
+    static class pair {
+        int cost;
+        int vertex;
+        pair(int c,int v){
+            cost = c;
+            vertex = v;
+        }
+    }
+
+    static pair dfs(int u){
+        if(dp[u].cost!=-1)
             return dp[u];
-        int ans = 0;
+        pair ans = new pair(0,u);
         for(int v:adj.get(u)){
-            int curr = dfs(v);
-            if(curr >= ans){
-                if(ans == curr){
-                    if(next[u] > v)
-                        next[u] = v;
-                }
-                else {
-                    ans = curr;
-                    next[u] = v;
-                }
+            pair curr = dfs(v);
+            if(curr.cost > ans.cost){
+                ans.cost = curr.cost;
+                ans.vertex = curr.vertex;
+            }
+            else if(curr.cost == ans.cost && ans.vertex > curr.vertex){
+                ans.vertex = curr.vertex;
             }
         }
-        return dp[u] = 1 + ans;
+        return dp[u] = new pair(ans.cost+1,ans.vertex);
     }
 
-    static class state {
-        int u,c;
-        state(int u,int c){
-            this.u = u;
-            this.c = c;
-        }
-    }
-
-    static int bfs(){
-        Queue<state> q = new ArrayDeque<>();
-        q.offer(new state(s,0));
-        int longest = 0;
-
-        while(!q.isEmpty()){
-            state curr = q.poll();
-            if(dp[curr.u] < curr.c){
-                dp[curr.u] = curr.c;
-                if(longest < curr.c){
-                    longest = curr.c;
-                    t = curr.u;
-                }
-                else if(longest == curr.c && t > curr.u){
-                    t = curr.u;
-                }
-                for(int v:adj.get(curr.u)){
-                    q.offer(new state(v,curr.c+1));
-                }
-            }
-        }
-        return longest;
-    }
+       
     public static void main(String[] args) {
         int tc = 0;
         boolean line = false;
@@ -81,17 +55,11 @@ class Main {
                     break;
                 adj.get(u).add(v);
             }
-            dp = new int[n+1];
-            Arrays.fill(dp,-1);
-            next = new int[n+1];
-            //int ans = dfs(s)-1;
-            int ans = bfs();
-            /* int curr = s;
-            while(curr!=0){
-                t = curr;
-                curr = next[curr];
-            } */
-            System.out.printf("Case %d: The longest path from %d has length %d, finishing at %d.\n\n",tc,s,ans,t);
+            dp = new pair[n+1];
+            Arrays.fill(dp,new pair(-1,-1));
+            pair ans = dfs(s);
+            
+            System.out.printf("Case %d: The longest path from %d has length %d, finishing at %d.\n\n",tc,s,ans.cost-1,ans.vertex);
         }
     }
 }
